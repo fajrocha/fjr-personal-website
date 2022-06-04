@@ -87,7 +87,7 @@ p {
 /* ______________ ME SECTION ___________________________ */
 .my-photo {
   max-width: 15%;
-  border-radius: 50%;
+  border-radius: 100%;
   border: solid #fff 3px;
   margin: 0;
 }
