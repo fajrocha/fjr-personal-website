@@ -1,11 +1,69 @@
-/* HTML Elements */
+html {
+  font-size: 62.5%;
+}
+
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
+  font-size: 1.8rem;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 2rem;
+  }
 }
 
 p {
   line-height: 1.5;
+}
+
+/* BLOCKS */
+
+.block-blue {
+  background: #04009A;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #00EAD3, #77ACF1, #04009A);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #00EAD3, #77ACF1, #04009A);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
+
+.block-white {
+  background: #fff;
+  margin: 0;
+  width: auto;
+}
+
+/* NAVBAR */
+.navbar {
+  padding: 2.5rem 4rem;
+}
+
+.nav-item {
+  margin-left: 1.8rem;
+  text-align: right;
+}
+
+.nav-link {
+  font-weight: 400;
+}
+
+.navbar-toggler {
+  font-size: 1.8rem;
+}
+
+.navbar-collapse {
+  margin-top: 1.3rem;
+}
+
+@media (min-width: 768px) {
+  .navbar-collapse {
+    margin-top: 0;
+  }
 }
 
 /* General Selectors */
@@ -41,46 +99,6 @@ p {
 
 .heading-icons-blue-bg {
   font-size: 4rem;
-  color: #fff;
-}
-
-.blue-container {
-  background: #04009A;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #00EAD3, #77ACF1, #04009A);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #00EAD3, #77ACF1, #04009A);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  margin: 0;
-  width: auto;
-}
-
-.white-container {
-  background: #fff;
-  margin: 0;
-  width: auto;
-}
-
-/* Navbars selectors */
-.navbar {
-  padding: 2%;
-}
-
-.navbar-brand {
-  font-family: 'Ubuntu';
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-
-.nav-item {
-  padding: 0 0 0 18px;
-  text-align: right;
-}
-
-.nav-link {
-  font-size: 1.2rem;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: normal;
   color: #fff;
 }
 
