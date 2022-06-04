@@ -1,3 +1,8 @@
+:root {
+  --color-white: #fff;
+  --color-black: #000;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -20,27 +25,30 @@ p {
 
 /* BLOCKS */
 
-.block-blue {
+.block {
+  margin: 0;
+  padding: 1.5% 3% 3%;
+  width: auto;
+}
+
+.block--blue {
   background: #04009A;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #00EAD3, #77ACF1, #04009A);
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #00EAD3, #77ACF1, #04009A);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  margin: 0;
-  padding: 0;
-  width: auto;
+
 }
 
-.block-white {
-  background: #fff;
-  margin: 0;
-  width: auto;
+.block--white {
+  background: var(--color-white);
 }
 
 /* NAVBAR */
 .navbar {
-  padding: 2.5rem 4rem;
+  padding: 0;
+  margin-bottom: 3%;
 }
 
 .nav-item {
@@ -57,19 +65,99 @@ p {
 }
 
 .navbar-collapse {
-  margin-top: 1.3rem;
+  margin-top: 3%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .navbar-collapse {
     margin-top: 0;
   }
 }
 
-/* General Selectors */
-.heading-row {
+/* HEADER BLOCK  */
+.block__header {
   text-align: center;
-  padding: 3% 0;
+  padding: 1rem 0;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, .2);
+}
+
+.block__header--blue {
+  color: var(--color-white);
+}
+
+.block__header--white {
+  color: var(--color-black);
+}
+
+/* PHOTO */
+
+.block__photo {
+  max-width: 50%;
+  border-radius: 100%;
+  border: solid #fff 3px;
+  margin: 0;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, .5);
+}
+
+@media (min-width: 768px) {
+  .block__photo {
+    max-width: 25%;
+  }
+}
+
+@media (min-width: 992px) {
+  .block__photo {
+    max-width: 20%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .block__photo {
+    max-width: 15%;
+  }
+}
+
+/* TITLE */
+
+.block__heading {
+  font-family: "Sacramento", sans-serif;
+  font-weight: bold;
+  font-size: 5.5rem;
+  color: #FAF3F3;
+  margin: 6% 0 3%;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, .4);
+}
+
+@media (min-width: 576px) {
+  .block__heading {
+    margin: 4% 0 2%;
+    font-size: 8rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .block__heading {
+    margin: 2% 0 1%;
+    font-size: 9rem;
+  }
+}
+
+/* Introductory Text */
+
+.block__description {
+  color: var(--color-white);
+  padding: 0 10%;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+  /* text-align: center; */
+}
+
+@media (min-width: 992px) {
+  .block__description {
+    padding: 0 25%;
+    font-size: 1.8rem;
+  }
 }
 
 .section-heading-blue-bg {
@@ -100,33 +188,6 @@ p {
 .heading-icons-blue-bg {
   font-size: 4rem;
   color: #fff;
-}
-
-/* ______________ ME SECTION ___________________________ */
-.my-photo {
-  max-width: 15%;
-  border-radius: 100%;
-  border: solid #fff 3px;
-  margin: 0;
-}
-
-.im-fabio {
-  font-family: "Sacramento", sans-serif;
-  font-weight: bold;
-  font-size: 5rem;
-  color: #FAF3F3;
-  margin: 3% 0 0 0;
-}
-
-.who-am-i {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: normal;
-  font-size: 1.2rem;
-  line-height: 1.5;
-  color: #FAF3F3;
-  padding: 0 25% 3%;
-  margin: 0;
-  text-align: center;
 }
 
 /* ______________SKILLS SECTION________________________ */
@@ -528,14 +589,6 @@ p {
     left: -31.8px;
   }
 
-  .my-photo {
-    max-width: 50%;
-  }
-
-  .who-am-i {
-    padding: 0 5% 3%;
-  }
-
   .company-logo {
     max-height: 65%;
   }
@@ -576,20 +629,8 @@ p {
     font-size: 0.9rem;
   }
 
-  .im-fabio {
-    margin: 8% 0 0 0;
-  }
-
-  .who-am-i {
-    padding: 0 5% 8%;
-  }
-
   .skills-subtext {
     margin-bottom: 8%;
-  }
-
-  .heading-row {
-    padding: 8% 0;
   }
 
 }
@@ -600,16 +641,6 @@ p {
   /*________________________*/
   .company-logo {
     max-height: 60%;
-  }
-
-  .im-fabio {
-    font-size: 4rem;
-    /* margin: 8% 0 0 0; */
-  }
-
-  .who-am-i {
-    font-size: 1rem;
-    /* padding: 0 5% 8%; */
   }
 
   .section-heading-blue-bg {
@@ -639,10 +670,6 @@ p {
 
   .skills-titles {
     font-size: 0.9rem;
-  }
-
-  .heading-row {
-    /* padding: 8% 0; */
   }
 }
 

@@ -16,10 +16,16 @@
     />
 
     <!--CSS Stylesheets-->
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
       integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    /> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/styles.css" />
@@ -33,38 +39,44 @@
     />
 
     <!-- Bootstrap Scripts-->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
     <script
       src="https://code.jquery.com/jquery-3.6.0.js"
       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
       crossorigin="anonymous"
     ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script
+    <!-- <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
       crossorigin="anonymous"
-    ></script>
+    ></script> -->
     <script src="js/script.js"></script>
   </head>
 
   <body>
-    <section class="" id="me">
-      <div class="block-blue container-fluid">
-        <nav class="navbar navbar-expand-md navbar-dark justify-content-end">
+    <section class="block block--blue" id="me">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark">
           <button
-            class="navbar-toggler"
+            class="navbar-toggler ms-auto"
             type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
+          <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav ms-auto">
               <li class="nav-item">
                 <a class="nav-link" href="#skills">Skills</a>
               </li>
@@ -80,24 +92,46 @@
             </ul>
           </div>
         </nav>
-        <header class="heading-row">
+        <header class="block__header block__header--blue">
           <img
-            class="my-photo img-fluid"
+            class="block__photo img-fluid"
             src="images/my-photo.webp"
             alt="A picture of me"
           />
-          <h1 class="im-fabio">I'm Fábio</h1>
-          <h2 class="who-am-i">
-            A mechanical engineer with a strong background in programming
-            interested in developing all sorts of software solutions.
-          </h2>
+          <h1 class="block__heading">I'm Fábio</h1>
+          <div class="block__description">
+            <p>
+              I'm a mechanical engineer who found out during university
+              that programming is my passion.
+            </p>
+            <p class="fifty-chars">
+              From there I took any programming related subject I could
+              pick, delving into PLCs, robotics, computer vision,
+              microcontrollers and later to high level languages like C.
+              During my master's I explored front-end as well, mainly
+              HTML5, CSS3 and the Vue.Js framework.
+            </p>
+            <p>
+              After university I realized I lacked a lot of knowledge
+              not only of more recent programming languages (C#, Python)
+              but also of good software design practices and even some
+              basic CS concepts like OOP, data structures or the big O
+              notation.
+            </p>
+            <p>
+              Thus, for the past months I have been educating myself on
+              these matters, as well as methodologies like Agile and
+              DevOps.
+            </p>
+            </div>
+          </div>
         </header>
       </div>
     </section>
     <!--
   <section class="" id="skills">
-    <div class="block-white container-fluid">
-      <header class="heading-row">
+    <div class="block block--white container-fluid">
+      <header class="block__header">
         <span class="heading-icons-white-bg fas fa-head-side-brain"></span>
         <h1 class="section-heading-white-bg">Skills</h1>
       </header>
@@ -161,8 +195,8 @@
     </div>
   </section>
   <section class="" id="experience">
-    <div class="block-blue container-fluid">
-      <header class="heading-row">
+    <div class="block block--blue container-fluid">
+      <header class="block__header">
         <span class="heading-icons-blue-bg fas fa-user-tie"></span>
         <h1 class="section-heading-blue-bg">Experience</h1>
       </header>
@@ -275,8 +309,8 @@
     <!-- EDUCATION SECTION -->
     <!--
   <section class="" id="education">
-    <div class="block-white container-fluid">
-      <header class="heading-row">
+    <div class="block block--white container-fluid">
+      <header class="block__header">
         <span class="heading-icons-white-bg fas fa-graduation-cap"></span>
         <h1 class="section-heading-white-bg">Education</h1>
       </header>
@@ -336,8 +370,8 @@
     <!-- CONTACT ME SECTION -->
     <!--
   <section class="" id="contact-me">
-    <div class="block-blue container-fluid">
-      <header class="heading-row">
+    <div class="block block--blue container-fluid">
+      <header class="block__header">
         <span class="heading-icons-blue-bg fas fa-comments"></span>
         <h1 class="section-heading-blue-bg">Contact-me!</h1>
       </header>
@@ -358,7 +392,7 @@
   -->
     <!-- FOOTER -->
     <!--
-  <footer class="block-blue" id="footer">
+  <footer class="block block--blue" id="footer">
     <p class="copyright">© Copyright 2021 fjr</p>
   </footer>
   --></body>
