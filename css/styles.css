@@ -1,5 +1,5 @@
 :root {
-  --color-white: #fff;
+  --color-white: #FAF3F3;
   --color-black: #000;
 }
 
@@ -117,32 +117,79 @@ p {
   }
 }
 
-/* TITLE */
+/* BLOCKS */
 
 .block__heading {
-  font-family: "Sacramento", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 5.5rem;
-  color: #FAF3F3;
-  margin: 6% 0 3%;
+  display: inline-block;
   text-shadow: 3px 3px 5px rgba(0, 0, 0, .4);
+  margin: 0;
 }
+
+#presentation .block__heading {
+  margin: 6% 0 3%;
+}
+
+.block__heading--white {
+  color: #FAF3F3;
+}
+
+#presentation .block__heading--white {
+  display: block;
+  font-family: "Sacramento", sans-serif;
+}
+
 
 @media (min-width: 576px) {
   .block__heading {
-    margin: 4% 0 2%;
     font-size: 8rem;
+  }
+
+  #presentation .block__heading {
+    margin: 4% 0 2%;
   }
 }
 
 @media (min-width: 992px) {
+
   .block__heading {
-    margin: 2% 0 1%;
     font-size: 9rem;
+  }
+
+  #presentation .block__heading {
+    margin: 2% 0 1%;
   }
 }
 
-/* Introductory Text */
+.block__heading-icons {
+  font-size: 3.7rem;
+  margin-right: 3%;
+}
+
+@media (min-width: 576px) {
+  .block__heading-icons {
+    font-size: 5.3rem;
+    margin-right: 2%;
+  }
+}
+
+@media (min-width: 992px) {
+  .block__heading-icons {
+    font-size: 6rem;
+    margin-right: 1%;
+  }
+}
+
+.block__heading-icons--white {
+  color: var(--color-white);
+}
+
+.block__heading-icons--dark {
+  color: var(--color-black);
+}
+
 
 .block__description {
   color: var(--color-white);
@@ -150,7 +197,6 @@ p {
   margin: 0;
   font-size: 1.5rem;
   font-weight: 500;
-  /* text-align: center; */
 }
 
 @media (min-width: 992px) {
@@ -179,15 +225,6 @@ p {
   margin: 0;
   display: inline-block;
   margin-left: 1%;
-}
-
-.heading-icons-white-bg {
-  font-size: 4rem;
-}
-
-.heading-icons-blue-bg {
-  font-size: 4rem;
-  color: #fff;
 }
 
 /* ______________SKILLS SECTION________________________ */
