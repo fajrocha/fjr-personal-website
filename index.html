@@ -11,7 +11,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;900&family=Ubuntu:wght@300;400;700&display=swap&family=Roboto:wght@100;300&family=Sacramento&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;900&family=Sacramento&display=swap"
       rel="stylesheet"
     />
 
@@ -99,7 +99,7 @@
             alt="A picture of me"
           />
           <h1 class="block__heading block__heading--white">I'm Fábio</h1>
-          <div class="block__description">
+          <div class="block__description block__description--white">
             <p>
               I'm a mechanical engineer who found out during university
               that programming is my passion.
@@ -118,7 +118,7 @@
               basic CS concepts like OOP, data structures or the big O
               notation.
             </p>
-            <p>
+            <p class="block__description-last">
               Thus, for the past months I have been educating myself on
               these matters, as well as methodologies like Agile and
               DevOps.
@@ -135,72 +135,95 @@
           <span class="block__heading-icons block__heading-icons--dark fas fa-head-side-brain"></span>
           <h1 class="block__heading">Skills</h1>
         </div>
-        </header>
-      <!-- <div class="skills-container container-fluid">
-        <p class="skills-subtext">Along my academic and professional experience I have used the following languages & software:</p>
-        <div class="row">
-          <div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-4">
-            <h3 class="skills-titles">HTML5</h3>
-            <img class="skills-icons" src="images/html-icon.png" alt="c-icon">
-          </div>
-          <div class="col-lg-3  col-md-6 col-sm-6 col-6 mb-4">
-            <h3 class="skills-titles">CSS3</h3>
-            <img class="skills-icons" src="images/css3-icon.png" alt="c-icon">
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-4">
-            <h3 class="skills-titles">JavaScript</h3>
-            <img class="skills-icons" src="images/js-icon.png" alt="c-icon">
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-4">
-            <h3 class="skills-titles">Vue.JS</h3>
-            <img class="skills-icons" src="images/vue-icon.png" alt="c-icon">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-4">
-            <h3 class="skills-titles">Bootstrap 4</h3>
-            <img class="skills-icons" src="images/bootstrap-icon.png" alt="c-icon">
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-4">
-            <h3 class="skills-titles">C</h3>
-            <img class="skills-icons" src="images/c-icon.png" alt="c-icon">
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-4">
-            <h3 class="skills-titles">SQL</h3>
-            <img class="skills-icons" src="images/sql-icon.png" alt="c-icon">
-          </div>
-          <div class="col-lg-3  col-md-6 col-sm-6 col-6 mb-4">
-            <h3 class="skills-titles">Siemens TIA Portal</h3>
-            <img class="skills-icons" src="images/tia-icon.jpg" alt="c-icon">
+        <p class="block__description block__description--black">Along my academic and professional experience I have used the following languages & software:</p>
+      </header>
+      <div class="skills-container container-fluid">
+      <div class="row">
+        <!-- Frontend -->
+        <div class="col col-xl-3 col-lg-6 col-md-6 col-12 mb-3">
+          <div class="card text-white">
+            <div class="card-header">Frontend</div>
+            <div class="card-body">
+              <ul class="list list--icon">
+                <div class="d-flex align-items-center list__item">
+                  <img src="images/html5-icon.svg" alt="" class="list__icon"><li class="">HTML5</li>
+                </div>
+                <div class="d-flex align-items-center list__item">
+                  <img src="images/css3-icon.svg" alt="" class="list__icon"><li class="">CSS3</li>
+                </div>
+                <div class="d-flex align-items-center list__item">
+                  <img src="images/bootstrap-5.svg" alt="" class="list__icon"><li class="">Bootstrap 5</li>
+                </div>
+                <div class="d-flex align-items-center list__item">
+                  <img src="images/vue-icon.svg" alt="" class="list__icon"><li class="">Vue.JS</li>
+                </div>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-4">
-            <h3 class="skills-titles">ABB Robotstudio</h3>
-            <img class="skills-icons" src="images/robotstudio-icon.png" alt="c-icon">
+        <!-- Backend -->
+        <div class="col col-xl-3 col-lg-6 col-md-6 col-12 mb-3">
+          <div class="card text-white">
+            <div class="card-header">Backend</div>
+            <div class="card-body">
+              <ul class="list list--icon">
+                <div class="d-flex align-items-center list__item">
+                  <img src="images/c-icon.svg" alt="" class="list__icon"><li class="">C</li>
+                </div>
+                <div class="d-flex align-items-center list__item">
+                  <img src="images/csharp-icon.svg" alt="" class="list__icon"><li class="">C#</li>
+                </div>
+                <div class="d-flex align-items-center list__item">
+                  <img src="images/python-svg.svg" alt="" class="list__icon"><li class="">Python</li>
+                </div>
+              </ul>
+            </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-4">
-            <h3 class="skills-titles">Matlab</h3>
-            <img class="skills-icons" src="images/matlab-icon.png" alt="c-icon">
+        </div>
+        <!-- Version Control -->
+        <div class="col col-xl-3 col-lg-6 col-md-6 col-12 mb-3">
+          <div class="card text-white">
+            <div class="card-header">Version Control</div>
+            <div class="card-body">
+              <ul class="list list--icon">
+                <div class="d-flex align-items-center list__item">
+                  <img src="images/git-icon.svg" alt="" class="list__icon"><li class="">GIT</li>
+                </div>
+                <div class="d-flex align-items-center list__item">
+                  <img src="images/svn-icon.svg" alt="" class="list__icon"><li class="">Apache SVN</li>
+                </div>
+              </ul>
+            </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-4">
-            <h3 class="skills-titles">Autodesk Inventor</h3>
-            <img class="skills-icons" src="images/inventor-icon.png" alt="c-icon">
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-4">
-            <h3 class="skills-titles">SolidWorks</h3>
-            <img class="skills-icons" src="images/sw-icon.png" alt="c-icon">
+        </div>
+        <!-- Automation Tools -->
+        <div class="col col-xl-3 col-lg-6 col-md-6 col-12 mb-3">
+          <div class="card text-white">
+            <div class="card-header">Controls SW</div>
+            <div class="card-body">
+              <ul class="list list--icon">
+                <div class="d-flex align-items-center list__item">
+                  <img src="images/tia-icon.webp" alt="" class="list__icon"><li class="">Siemens TIA Portal</li>
+                </div>
+                <div class="d-flex align-items-center list__item">
+                  <img src="images/twinc2-icon.png" alt="" class="list__icon"><li class="">TwinCat 2</li>
+                </div>
+                <div class="d-flex align-items-center list__item">
+                  <img src="images/robotstudio-icon.png" alt="" class="list__icon"><li class="">ABB RobotStudio</li>
+                </div>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
   </section>
   <!--
   <section class="" id="experience">
     <div class="block block--blue container-fluid">
       <header class="block__header">
-        <span class="heading-icons-blue-bg fas fa-user-tie"></span>
-        <h1 class="section-heading-blue-bg">Experience</h1>
+        <span class="block__heading-icons--white fas fa-user-tie"></span>
+        <h1 class="block__heading block__heading--white">Experience</h1>
       </header>
       <ul class="timeline-exp">
         <li class="career-dates" dates="Jan. 2021 to PRESENT">
@@ -313,8 +336,8 @@
   <section class="" id="education">
     <div class="block block--white container-fluid">
       <header class="block__header">
-        <span class="heading-icons-white-bg fas fa-graduation-cap"></span>
-        <h1 class="section-heading-white-bg">Education</h1>
+        <span class="block__heading-icons--black fas fa-graduation-cap"></span>
+        <h1 class="block__heading block__heading--dark">Education</h1>
       </header>
       <ul class="timeline-education">
         <li class="education-dates" dates="Sep. 2015 to Nov. 2020">
@@ -374,7 +397,7 @@
   <section class="" id="contact-me">
     <div class="block block--blue container-fluid">
       <header class="block__header">
-        <span class="heading-icons-blue-bg fas fa-comments"></span>
+        <span class="block__heading-icons--white fas fa-comments"></span>
         <h1 class="section-heading-blue-bg">Contact-me!</h1>
       </header>
       <div class="contact-me-container container-fluid">

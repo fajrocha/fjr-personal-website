@@ -129,7 +129,7 @@ p {
 }
 
 #presentation .block__heading {
-  margin: 6% 0 3%;
+  margin: 6% 0 0;
 }
 
 .block__heading--white {
@@ -148,7 +148,7 @@ p {
   }
 
   #presentation .block__heading {
-    margin: 4% 0 2%;
+    margin: 4% 0 0;
   }
 }
 
@@ -159,7 +159,7 @@ p {
   }
 
   #presentation .block__heading {
-    margin: 2% 0 1%;
+    margin: 2% 0 0;
   }
 }
 
@@ -190,23 +190,97 @@ p {
   color: var(--color-black);
 }
 
-
 .block__description {
-  color: var(--color-white);
   padding: 0 10%;
-  margin: 0;
+  margin: 3% 0 0;
   font-size: 1.5rem;
   font-weight: 500;
 }
 
 @media (min-width: 992px) {
   .block__description {
-    padding: 0 25%;
-    font-size: 1.8rem;
+    margin-top: 2%;
   }
 }
 
-.section-heading-blue-bg {
+@media (min-width: 992px) {
+  .block__description {
+    padding: 0 25%;
+    font-size: 1.8rem;
+    margin-top: 1%;
+  }
+}
+
+.block__description--white {
+  color: var(--color-white);
+}
+
+.block__description--black {
+  color: var(--color-black);
+}
+
+.block__description-last {
+  margin-bottom: 0;
+}
+
+.card {
+  border-radius: 1rem;
+  box-shadow: 0 0 20px 10px #f3f3f3;
+  overflow: hidden;
+  transition: transform 0.2s ease-out;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+@media (min-width: 768px) {
+  .card {
+    height: 23rem;
+  }
+}
+
+.card-header {
+  font-size: 2.8rem;
+  font-weight: 500;
+  background: -webkit-linear-gradient(to right, #03256C, #6A097D);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #03256C, #6A097D);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.card-body {
+  color: var(--color-black);
+  font-weight: 500;
+  font-size: 1.7rem;
+  text-align: left;
+  padding: 2rem;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+}
+
+.list--icon .list__item {
+  margin-bottom: 4%;
+}
+
+.list--icon .list__item-last {
+  margin-bottom: 0;
+}
+
+.list__icon {
+  height: 1.7rem;
+  margin-right: 4%;
+}
+
+.skills-container {
+  text-align: center;
+  padding: .5% 10%;
+}
+
+/* .section-heading-blue-bg {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   color: #fff;
@@ -225,18 +299,12 @@ p {
   margin: 0;
   display: inline-block;
   margin-left: 1%;
-}
+} */
 
 /* ______________SKILLS SECTION________________________ */
 .skills-subtext {
   font-size: 1rem;
   padding: 0 5%;
-  margin-bottom: 3%;
-}
-
-.skills-container {
-  text-align: center;
-  padding: 0 15%;
   margin-bottom: 3%;
 }
 
