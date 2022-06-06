@@ -21,6 +21,14 @@ body {
 
 p {
   line-height: 1.5;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+@media (min-width: 992px) {
+  p {
+    font-size: 1.8rem;
+  }
 }
 
 /* BLOCKS */
@@ -193,12 +201,10 @@ p {
 .block__description {
   padding: 0 10%;
   margin: 3% 0 0;
-  font-size: 1.5rem;
-  font-weight: 500;
   text-align: center;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .block__description {
     margin-top: 2%;
   }
@@ -207,7 +213,6 @@ p {
 @media (min-width: 992px) {
   .block__description {
     padding: 0 25%;
-    font-size: 1.8rem;
     margin-top: 1%;
   }
 }
@@ -226,9 +231,8 @@ p {
 
 .card {
   border-radius: 1rem;
-  box-shadow: 0 0 20px 10px #f3f3f3;
-  overflow: hidden;
   transition: transform 0.2s ease-out;
+  overflow: hidden;
 }
 
 .card:hover {
@@ -241,16 +245,29 @@ p {
   }
 }
 
+.shadow--primary {
+  box-shadow: 0 0 20px 10px #f3f3f3;
+}
+
+.shadow--secondary {
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, .3)
+}
+
 .card-header {
   font-size: 2.8rem;
   font-weight: 500;
+}
+
+.card-header--primary {
   background: -webkit-linear-gradient(to right, #03256C, #6A097D);
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #03256C, #6A097D);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.card-body {
+.card-body {}
+
+.card-body--dark {
   color: var(--color-black);
   font-weight: 500;
   font-size: 1.7rem;
@@ -286,7 +303,7 @@ p {
 /* Timelines */
 
 .timeline {
-  margin: 1% 0;
+  margin: 1% 0 0;
 }
 
 .timeline__date {
@@ -329,53 +346,56 @@ p {
   position: relative;
 }
 
-.timeline__line--vertical {
-  content: ".";
-  height: 30%;
-  background: var(--color-white);
-}
-
 .timeline__line--hidden {
   visibility: hidden;
 }
 
-.carousel__title {
+.timeline__dotted-line {
+  height: 4rem;
+  width: .2rem;
+  padding: 0;
+  border-right: dotted .2rem var(--color-white);
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, .3);
+  background: #618CC5;
+}
+
+.timeline__milestone {
+  text-align: center;
+  border: solid 2px var(--color-white);
+  border-radius: 1rem;
+  /* clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%); */
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, .3);
+  padding: 3%;
+}
+
+@media (min-width: 768px) {
+  .timeline__milestone {
+    padding: 2%;
+  }
+}
+
+.timeline__milestone-title {
   color: var(--color-white);
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 500;
   margin: 0;
 }
 
-.carousel__icon {
+@media (min-width: 768px) {
+  .timeline__milestone-title {
+    font-size: 3rem;
+  }
+}
+
+.timeline__milestone-icon {
   height: 5rem;
 }
 
 @media (min-width: 768px) {
-  .carousel__icon {
+  .timeline__milestone-icon {
     height: 6rem;
   }
 }
-
-/* .section-heading-blue-bg {
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  color: #fff;
-  text-align: center;
-  font-size: 4rem;
-  margin: 0;
-  display: inline-block;
-  margin-left: 1%;
-}
-
-.section-heading-white-bg {
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  text-align: center;
-  font-size: 4rem;
-  margin: 0;
-  display: inline-block;
-  margin-left: 1%;
-} */
 
 /* ______________SKILLS SECTION________________________ */
 .skills-subtext {
