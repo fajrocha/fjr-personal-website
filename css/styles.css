@@ -229,7 +229,10 @@ p {
   margin-bottom: 0;
 }
 
+/* Cards */
+
 .card {
+  border: none;
   border-radius: 1rem;
   transition: transform 0.2s ease-out;
   overflow: hidden;
@@ -240,7 +243,7 @@ p {
 }
 
 @media (min-width: 768px) {
-  .card {
+  .card--skills {
     height: 23rem;
   }
 }
@@ -265,14 +268,29 @@ p {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.card-body {}
+.card-header--secondary {
+  background: -webkit-linear-gradient(to right, #D3DEDC, #FFEFEF);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #D3DEDC, #FFEFEF);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 
-.card-body--dark {
-  color: var(--color-black);
+.card-body {
   font-weight: 500;
   font-size: 1.7rem;
-  text-align: left;
+  color: var(--color-black);
   padding: 2rem;
+}
+
+.card-body--white {
+  padding-left: 3rem;
+}
+
+.card-body--grey {
+  background: -webkit-linear-gradient(to right, #D8D2CB, #F2F2F2);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #D8D2CB, #F2F2F2);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 /* Lists */
@@ -282,11 +300,11 @@ p {
   margin: 0;
 }
 
-.list--icon .list__item {
+.list__item {
   margin-bottom: 4%;
 }
 
-.list--icon .list__item-last {
+.list__item-last {
   margin-bottom: 0;
 }
 
@@ -318,7 +336,6 @@ p {
   padding: 6%;
   border-radius: 100%;
   border: 2px solid var(--color-white);
-  box-shadow: 0 0 10px 2px rgba(0, 0, 0, .3);
   transition: transform 0.2s ease-out;
   z-index: 1;
 }
@@ -361,21 +378,9 @@ p {
 
 .timeline__milestone {
   text-align: center;
-  border: solid 2px var(--color-white);
-  border-radius: 1rem;
-  /* clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%); */
-  box-shadow: 0 0 10px 5px rgba(0, 0, 0, .3);
-  padding: 3%;
-}
-
-@media (min-width: 768px) {
-  .timeline__milestone {
-    padding: 2%;
-  }
 }
 
 .timeline__milestone-title {
-  color: var(--color-white);
   font-size: 2rem;
   font-weight: 500;
   margin: 0;
@@ -383,7 +388,7 @@ p {
 
 @media (min-width: 768px) {
   .timeline__milestone-title {
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
 }
 
@@ -396,6 +401,57 @@ p {
     height: 6rem;
   }
 }
+
+/* Buttons */
+
+.btn {
+  font-size: 2rem;
+  border-radius: 1rem;
+  border: none;
+  font-weight: 500;
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn--primary {
+  color: var(--color-white);
+}
+
+.timeline__title {
+  color: var(--color-white);
+  border-radius: 1rem;
+  padding: 2%;
+  background: #04009A;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #03256C, #6A097D);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #03256C, #6A097D);
+}
+
+.button--primary {
+  background: #04009A;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #03256C, #6A097D);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #03256C, #6A097D);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #FAF3F3;
+  transition: background-color 2s ease;
+}
+
+.button--primary:hover {
+  background: #04009A;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #AA2EE6, #9D0191);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #AA2EE6, #9D0191);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  opacity: 1;
+}
+
 
 /* ______________SKILLS SECTION________________________ */
 .skills-subtext {
@@ -438,56 +494,6 @@ p {
 
 .company-row {
   margin: 0;
-}
-
-.learn-more-btns-blue-bg {
-  position: relative;
-  margin-left: 15px;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  background: #04009A;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #AA2EE6, #9D0191);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #AA2EE6, #9D0191);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: #FAF3F3;
-  border: none;
-  transition: background-color 2s ease;
-  z-index: 1;
-}
-
-.learn-more-btns-blue-bg::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: -webkit-linear-gradient(to right, #03256C, #6A097D);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #03256C, #6A097D);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  z-index: -1;
-  transition: opacity 0.5s ease;
-  opacity: 0;
-  border-radius: .25rem;
-}
-
-.learn-more-btns-blue-bg:hover::before {
-  background: #04009A;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #03256C, #6A097D);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #03256C, #6A097D);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  opacity: 1;
-  border-radius: .25rem;
-}
-
-.learn-more-btns-blue-bg:focus {
-  outline: none;
-  box-shadow: none;
 }
 
 .learn-more-cards-blue-bg {
@@ -800,7 +806,7 @@ p {
     padding-left: 0;
   }
 
-  .learn-more-btns-blue-bg {
+  .button--primary {
     margin-left: 0;
   }
 
