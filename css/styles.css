@@ -23,6 +23,7 @@ p {
   line-height: 1.5;
   font-size: 1.5rem;
   font-weight: 500;
+  letter-spacing: 1px;
 }
 
 @media (min-width: 992px) {
@@ -31,7 +32,7 @@ p {
   }
 }
 
-/* BLOCKS */
+/* Blocks */
 
 .block {
   margin: 0;
@@ -40,49 +41,25 @@ p {
 }
 
 .block--blue {
-  background: #04009A;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #00EAD3, #77ACF1, #04009A);
+  background: #04009A;
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #00EAD3, #77ACF1, #04009A);
+  background: -webkit-linear-gradient(to right, #00EAD3, #77ACF1, #04009A);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #00EAD3, #77ACF1, #04009A);
+}
 
+.block--blue-dark {
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, #3d8cf2, #00a4ea, #04009A);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #3d8cf2, #00a4ea, #04009A);
 }
 
 .block--white {
   background: var(--color-white);
 }
 
-/* NAVBAR */
-.navbar {
-  padding: 0;
-  margin-bottom: 3%;
-}
-
-.nav-item {
-  margin-left: 1.8rem;
-  text-align: right;
-}
-
-.nav-link {
-  font-weight: 400;
-}
-
-.navbar-toggler {
-  font-size: 1.8rem;
-}
-
-.navbar-collapse {
-  margin-top: 3%;
-}
-
-@media (min-width: 992px) {
-  .navbar-collapse {
-    margin-top: 0;
-  }
-}
-
-/* HEADER BLOCK  */
 .block__header {
   text-align: center;
   padding: 1rem 0;
@@ -96,8 +73,6 @@ p {
 .block__header--white {
   color: var(--color-black);
 }
-
-/* PHOTO */
 
 .block__photo {
   max-width: 50%;
@@ -124,8 +99,6 @@ p {
     max-width: 15%;
   }
 }
-
-/* BLOCKS */
 
 .block__heading {
   font-family: "Montserrat", sans-serif;
@@ -229,6 +202,36 @@ p {
   margin-bottom: 0;
 }
 
+/* Navbar */
+
+.navbar {
+  padding: 0;
+  margin-bottom: 3%;
+}
+
+.nav-item {
+  margin-left: 1.8rem;
+  text-align: right;
+}
+
+.nav-link {
+  font-weight: 400;
+}
+
+.navbar-toggler {
+  font-size: 1.8rem;
+}
+
+.navbar-collapse {
+  margin-top: 3%;
+}
+
+@media (min-width: 992px) {
+  .navbar-collapse {
+    margin-top: 0;
+  }
+}
+
 /* Cards */
 
 .card {
@@ -246,14 +249,6 @@ p {
   .card--skills {
     height: 23rem;
   }
-}
-
-.shadow--primary {
-  box-shadow: 0 0 20px 10px #f3f3f3;
-}
-
-.shadow--secondary {
-  box-shadow: 0 0 10px 2px rgba(0, 0, 0, .3)
 }
 
 .card-header {
@@ -291,6 +286,20 @@ p {
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #D8D2CB, #F2F2F2);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* Shadows */
+
+.shadow--primary {
+  box-shadow: 0 0 20px 10px #f3f3f3;
+}
+
+.shadow--secondary {
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, .3)
+}
+
+.text-shadow--primary {
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, .4);
 }
 
 /* Lists */
@@ -380,18 +389,6 @@ p {
   text-align: center;
 }
 
-.timeline__milestone-title {
-  font-size: 2rem;
-  font-weight: 500;
-  margin: 0;
-}
-
-@media (min-width: 768px) {
-  .timeline__milestone-title {
-    font-size: 2.8rem;
-  }
-}
-
 .timeline__milestone-icon {
   height: 5rem;
 }
@@ -405,10 +402,25 @@ p {
 /* Buttons */
 
 .btn {
-  font-size: 2rem;
-  border-radius: 1rem;
+  font-size: 1.8rem;
+  border-radius: .5rem;
   border: none;
   font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .btn {
+    font-size: 2rem;
+  }
+}
+
+.btn--rotated {
+  transform: rotate(-2deg);
+  transition: transform 0.2s ease-out;
+}
+
+.btn--rotated:hover {
+  transform: rotate(0);
 }
 
 .btn:focus {
@@ -418,40 +430,78 @@ p {
 
 .btn--primary {
   color: var(--color-white);
+  background: #83d2ad;
+  padding: .7rem 10%;
 }
 
-.timeline__title {
+.btn--primary:hover {
+  background: #74d2a6;
+}
+
+.btn--primary:hover {
   color: var(--color-white);
-  border-radius: 1rem;
-  padding: 2%;
-  background: #04009A;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #03256C, #6A097D);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #03256C, #6A097D);
 }
 
-.button--primary {
-  background: #04009A;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #03256C, #6A097D);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #03256C, #6A097D);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: #FAF3F3;
-  transition: background-color 2s ease;
+.test {
+  color: #000;
 }
 
-.button--primary:hover {
-  background: #04009A;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #AA2EE6, #9D0191);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #AA2EE6, #9D0191);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  opacity: 1;
+/* jQuery */
+
+.rotate-90-deg {
+  transform: rotate(90deg);
 }
 
+.rotate-2-deg {
+  transform: rotate(0deg);
+}
+
+/* Badges */
+
+.badge {
+  border-radius: .5rem;
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .badge {
+    font-size: 2.4rem;
+  }
+}
+
+.badge--rotated {
+  transition: transform 0.2s ease-out;
+  transform: rotate(2deg);
+}
+
+.badge--rotated:hover {
+  transform: rotate(0);
+}
+
+.badge--primary {
+  background: #fec274;
+}
+
+.badge--primary:hover {
+  background: #ffbd66;
+}
+
+.icon--rotate {
+  transition: all .45s ease-out;
+}
+
+/* Links */
+
+.links-experience {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.links-experience:hover {
+  color: var(--color-white);
+}
 
 /* ______________SKILLS SECTION________________________ */
 .skills-subtext {
@@ -569,15 +619,6 @@ p {
   margin: 0 auto 10px;
 }
 
-.links-experience {
-  color: #fff;
-  text-decoration: underline;
-}
-
-.links-experience:hover {
-  color: #FFF5B7;
-}
-
 /* _____________EDUCATION______________ */
 /* Timeline Education */
 .edu-school {
@@ -652,20 +693,7 @@ p {
 }
 
 .learn-more-btns-white-bg {
-  position: relative;
-  margin-left: 15px;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  background: #04009A;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #005F99, #3EDBF0);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #005F99, #3EDBF0);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: #FAF3F3;
-  border: none;
-  transition: background-color 2s ease;
-  z-index: 1;
+
 }
 
 .learn-more-btns-white-bg::before {
@@ -685,15 +713,7 @@ p {
   border-radius: .25rem;
 }
 
-.learn-more-btns-white-bg:hover::before {
-  background: #04009A;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #150E56, #04009A);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #150E56, #04009A);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  opacity: 1;
-  border-radius: .25rem;
+.learn-more-btns-white-bg:hover {
 }
 
 .learn-more-btns-white-bg:focus {

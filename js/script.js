@@ -1,10 +1,11 @@
 $(document).ready(function() {
-  $('.learn-more-btns-blue-bg').click(function() {
-    $(this).find('i').toggleClass('far fa-arrow-alt-circle-down far fa-arrow-alt-circle-up');
-  });
+  // $('.btn--arrow').click(function() {
+  //   $(this).find('i').toggleClass('far fa-arrow-alt-circle-right far fa-arrow-alt-circle-down');
+  // });
 
-  $('.learn-more-btns-white-bg').click(function() {
-    $(this).find('i').toggleClass('far fa-arrow-alt-circle-down far fa-arrow-alt-circle-up');
+  $(".btn--arrow").click(function() {
+    $(".icon--rotate").toggleClass('rotate-90-deg');
+    $(".btn--arrow").toggleClass('rotate-2-deg');
   });
 
   $("#mesa-logo-click").click(function() {
