@@ -11,6 +11,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 1.8rem;
+  letter-spacing: 1px;
 }
 
 @media (min-width: 768px) {
@@ -36,8 +37,12 @@ p {
 
 .block {
   margin: 0;
-  padding: 1.5% 3% 3%;
+  padding: 3% 3%;
   width: auto;
+}
+
+.block--intro {
+  padding-top: 1.5%;
 }
 
 .block--blue {
@@ -51,6 +56,10 @@ p {
 
 .block--blue-dark {
   /* Chrome 10-25, Safari 5.1-6 */
+  /* background: -webkit-linear-gradient(to right, #FBCB0A, #FAC213, #F77E21); */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* background: linear-gradient(to right, #FBCB0A, #FAC213, #F77E21); */
+  /* Chrome 10-25, Safari 5.1-6 */
   background: -webkit-linear-gradient(to right, #3d8cf2, #00a4ea, #04009A);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background: linear-gradient(to right, #3d8cf2, #00a4ea, #04009A);
@@ -62,7 +71,7 @@ p {
 
 .block__header {
   text-align: center;
-  padding: 1rem 0;
+  /* padding: 1rem 0; */
   text-shadow: 3px 3px 5px rgba(0, 0, 0, .2);
 }
 
