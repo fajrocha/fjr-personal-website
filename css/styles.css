@@ -71,8 +71,6 @@ p {
 
 .block__header {
   text-align: center;
-  /* padding: 1rem 0; */
-  text-shadow: 3px 3px 5px rgba(0, 0, 0, .2);
 }
 
 .block__header--blue {
@@ -203,7 +201,7 @@ p {
   color: var(--color-white);
 }
 
-.block__description--black {
+.block__description--dark {
   color: var(--color-black);
 }
 
@@ -256,7 +254,7 @@ p {
 
 @media (min-width: 768px) {
   .card--skills {
-    height: 23rem;
+    height: 100%;
   }
 }
 
@@ -300,15 +298,11 @@ p {
 /* Shadows */
 
 .shadow--primary {
-  box-shadow: 0 0 20px 10px #f3f3f3;
-}
-
-.shadow--secondary {
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, .3)
 }
 
 .text-shadow--primary {
-  text-shadow: 3px 3px 5px rgba(0, 0, 0, .4);
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, .3);
 }
 
 /* Lists */
@@ -498,7 +492,7 @@ p {
 }
 
 .icon--rotate {
-  transition: all .45s ease-out;
+  transition: .45s ease-out;
 }
 
 /* Links */
@@ -512,21 +506,10 @@ p {
   color: var(--color-white);
 }
 
-/* ______________SKILLS SECTION________________________ */
-.skills-subtext {
-  font-size: 1rem;
-  padding: 0 5%;
-  margin-bottom: 3%;
-}
+/* Collapse */
 
-.skills-icons {
-  width: 3rem;
-}
-
-.skills-titles {
-  font-size: 1.2rem;
-  font-weight: bold;
-  font-family: "Ubuntu", sans-serif;
+.collapsing {
+  transition: .9s linear;
 }
 
 /*_______________EXPERIENCE SECTION_________________*/

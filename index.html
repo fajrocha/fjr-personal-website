@@ -99,7 +99,7 @@
             alt="A picture of me"
           />
           <h1 class="block__heading block__heading--white">I'm Fábio</h1>
-          <div class="block__description block__description--white">
+          <div class="block__description block__description--white text-shadow--primary">
             <p>
               A mechanical engineer who found out during university
               that programming is my passion.
@@ -128,20 +128,19 @@
         </header>
       </div>
     </section>
-  <section class="block block--white" id="skills">
-    <div class="container-fluid">
+    <section class="block block--white" id="skills">
       <header class="block__header mb-3">
-        <div class="d-flex justify-content-center align-items-center">
-          <span class="block__heading-icons block__heading-icons--dark fas fa-head-side-brain"></span>
-          <h1 class="block__heading">Skills</h1>
-        </div>
-        <p class="block__description block__description--black">Along my academic and professional experience I have used the following languages & software:</p>
+          <div class="d-flex justify-content-center align-items-center">
+            <span class="block__heading-icons block__heading-icons--dark fas fa-head-side-brain"></span>
+            <h1 class="block__heading">Skills</h1>
+          </div>
+          <p class="block__description block__description--dark">Along my academic and professional experience I have used the following languages & software:</p>
       </header>
       <div class="skills-container container-fluid">
         <div class="row">
           <!-- Frontend -->
           <div class="col col-xl-3 col-lg-6 col-md-6 col-12 mb-3">
-            <div class="card card--skills shadow--secondary text-white">
+            <div class="card card--skills shadow--primary text-white">
               <div class="card-header card-header--primary">Frontend</div>
               <div class="card-body card-body--white">
                 <div class="list list--icon">
@@ -163,7 +162,7 @@
           </div>
           <!-- Backend -->
           <div class="col col-xl-3 col-lg-6 col-md-6 col-12 mb-3">
-            <div class="card card--skills shadow--secondary text-white">
+            <div class="card card--skills shadow--primary text-white">
               <div class="card-header card-header--primary">Backend</div>
               <div class="card-body card-body--white">
                 <div class="list list--icon">
@@ -181,7 +180,7 @@
             </div>
           </div>
           <div class="col col-xl-3 col-lg-6 col-md-6 col-12 mb-3">
-            <div class="card card--skills shadow--secondary text-white">
+            <div class="card card--skills shadow--primary text-white">
               <div class="card-header card-header--primary">Version Control</div>
               <div class="card-body card-body--white">
                 <div class="list list--icon">
@@ -197,7 +196,7 @@
           </div>
           <!-- Automation Tools -->
           <div class="col col-xl-3 col-lg-6 col-md-6 col-12 mb-3">
-            <div class="card card--skills shadow--secondary text-white">
+            <div class="card card--skills shadow--primary text-white">
               <div class="card-header card-header--primary">Controls SW</div>
               <div class="card-body card-body--white">
                 <div class="list list--icon">
@@ -215,10 +214,9 @@
             </div>
           </div>
         </div>
-    </div>
-  </section>
-  <section class="block block--blue-dark" id="experience">
-    <div class="container-fluid">
+      </div>
+    </section>
+    <section class="block block--blue-dark" id="experience">
       <header class="block__header">
         <div class="d-flex justify-content-center align-items-center">
           <span class="block__heading-icons block__heading-icons--white fas fa-user-tie"></span>
@@ -230,13 +228,13 @@
           <div class="carousel-item active">
             <div class="d-flex justify-content-center align-items-center timeline">
               <span class="timeline__line timeline__line--hidden"></span>
-              <h2 class="timeline__date shadow--secondary">Oct. 2021 - <br>Present</h2>
+              <h2 class="timeline__date shadow--primary text-shadow--primary">Oct. 2021 - <br>Present</h2>
               <span class="timeline__line"></span>
             </div>
             <div class="container-fluid timeline__dotted-line"></div>
             <div class="container-fluid timeline__milestone">
               <div class="d-flex justify-content-center align-items-center">
-                <div class="card shadow--secondary text-white">
+                <div class="card shadow--primary text-white">
                   <div class="card-header card-header--secondary">
                     <a href="https://conti-engineering.com/">
                       <img class="timeline__milestone-icon img-fluid" src="images/ces-logo.png" alt="CES's logo.">
@@ -244,15 +242,15 @@
                   </div>
                   <div class="card-body card-body--grey">
                     <div class="d-flex justify-content-center align-items-center mb-2">
-                      <div class="badge badge--primary text-shadow--primary shadow--secondary">
+                      <div class="badge badge--primary text-shadow--primary shadow--primary">
                         I4.0 Software Engineer
                       </div>
                     </div>
                     <div class="d-flex justify-content-center align-items-center">
                       <button 
-                        class="btn btn--primary btn--rotated btn--arrow text-shadow--primary shadow--secondary" 
-                        type="button" data-toggle="collapse" 
-                        data-target="#collapse--ces" 
+                        class="btn btn--primary btn--rotated btn--arrow text-shadow--primary shadow--primary" 
+                        type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse--ces" 
                         aria-expanded="false" 
                         aria-controls="collapse">
                         Learn More <i class="icon--rotate far fa-arrow-alt-circle-right"></i>
@@ -262,7 +260,7 @@
                 </div>
               </div>
             </div>
-            <div class="block__description block__description--white">
+            <div class="collapse block__description block__description--white text-shadow--primary" id="collapse--ces">
               <p>
                 Continental Engineering Services (CES) is a subsidiary of Continental AG, producer of tires and automotive parts. In general, 
                 CES focuses on developing software for the automotive industry, like ADAS (Advanced Driver Systems), driveline, electrification,
@@ -294,7 +292,7 @@
             <div class="container timeline__dotted-line"></div>
             <div class="container-fluid timeline__milestone">
               <div class="d-flex justify-content-center align-items-center">
-                <div class="card shadow--secondary text-white">
+                <div class="card shadow--primary text-white">
                   <div class="card-header card-header--secondary">
                     <a href="https://www.mesa-ceramics.com/">
                       <img class="timeline__milestone-icon" src="images/mesa-logo.png" alt="Mesa's logo.">
@@ -302,13 +300,13 @@
                   </div>
                   <div class="card-body card-body--grey">
                     <div class="d-flex justify-content-center align-items-center mb-2">
-                      <div class="badge badge--primary text-shadow--primary shadow--secondary">
+                      <div class="badge badge--primary text-shadow--primary shadow--primary">
                         Robotics Engineer
                       </div>
                     </div>
                     <div class="d-flex justify-content-center align-items-center">
                       <button 
-                        class="btn btn--primary btn--rotated btn--arrow text-shadow--primary shadow--secondary" 
+                        class="btn btn--primary btn--rotated btn--arrow text-shadow--primary shadow--primary" 
                         type="button" data-bs-toggle="collapse" 
                         data-bs-target="#collapse--mesa" 
                         aria-expanded="false" 
@@ -345,7 +343,7 @@
             <div class="container timeline__dotted-line"></div>
             <div class="container-fluid timeline__milestone">
               <div class="d-flex justify-content-center align-items-center">
-                <div class="card shadow--secondary text-white">
+                <div class="card shadow--primary text-white">
                   <div class="card-header card-header--secondary">
                     <a href="https://www.oli-world.com/pt/">
                       <img class="timeline__milestone-icon" src="images/oli-logo.png" alt="OLI's logo.">
@@ -353,13 +351,13 @@
                   </div>
                   <div class="card-body card-body--grey">
                     <div class="d-flex justify-content-center align-items-center mb-2">
-                      <div class="badge badge--primary text-shadow--primary shadow--secondary">
+                      <div class="badge badge--primary text-shadow--primary shadow--primary">
                         Automation Engineer Intern
                       </div>
                     </div>
                     <div class="d-flex justify-content-center align-items-center">
                       <button 
-                        class="btn btn--primary btn--rotated btn--arrow text-shadow--primary shadow--secondary" 
+                        class="btn btn--primary btn--rotated btn--arrow text-shadow--primary shadow--primary" 
                         type="button" data-bs-toggle="collapse" 
                         data-bs-target="#collapse--oli" 
                         aria-expanded="false" 
@@ -406,7 +404,7 @@
             <div class="container timeline__dotted-line"></div>
             <div class="container-fluid timeline__milestone">
               <div class="d-flex justify-content-center align-items-center">
-                <div class="card shadow--secondary text-white">
+                <div class="card shadow--primary text-white">
                   <div class="card-header card-header--secondary">
                     <a href="http://atena-ai.pt/">
                       <img class="timeline__milestone-icon img-fluid" src="images/atena-logo.png" alt="Atena's logo.">
@@ -414,13 +412,13 @@
                   </div>
                   <div class="card-body card-body--grey">
                     <div class="d-flex justify-content-center align-items-center mb-2">
-                      <div class="badge badge--primary text-shadow--primary shadow--secondary">
+                      <div class="badge badge--primary text-shadow--primary shadow--primary">
                         Automation Summer Intern
                       </div>
                     </div>
                     <div class="d-flex justify-content-center align-items-center">
                       <button 
-                        class="btn btn--primary btn--rotated btn--arrow text-shadow--primary shadow--secondary" 
+                        class="btn btn--primary btn--rotated btn--arrow text-shadow--primary shadow--primary" 
                         type="button" data-bs-toggle="collapse" 
                         data-bs-target="#collapse--atena-1" 
                         aria-expanded="false" 
@@ -455,7 +453,7 @@
             <div class="container timeline__dotted-line"></div>
             <div class="container-fluid timeline__milestone">
               <div class="d-flex justify-content-center align-items-center">
-                <div class="card shadow--secondary text-white">
+                <div class="card shadow--primary text-white">
                   <div class="card-header card-header--secondary">
                     <a href="http://atena-ai.pt/">
                       <img class="timeline__milestone-icon img-fluid" src="images/atena-logo.png" alt="Atena's logo.">
@@ -463,13 +461,13 @@
                   </div>
                   <div class="card-body card-body--grey">
                     <div class="d-flex justify-content-center align-items-center mb-2">
-                      <div class="badge badge--primary text-shadow--primary shadow--secondary">
+                      <div class="badge badge--primary text-shadow--primary shadow--primary">
                         Automation Engineer Intern
                       </div>
                     </div>
                     <div class="d-flex justify-content-center align-items-center">
                       <button 
-                        class="btn btn--primary btn--rotated btn--arrow text-shadow--primary shadow--secondary" 
+                        class="btn btn--primary btn--rotated btn--arrow text-shadow--primary shadow--primary" 
                         type="button" data-bs-toggle="collapse" 
                         data-bs-target="#collapse--atena-2" 
                         aria-expanded="false" 
@@ -496,179 +494,81 @@
               </p>
             </div>
           </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carousel--career" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carousel--career" data-bs-slide="next">
-          <span class="test carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel--career" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel--career" data-bs-slide="next">
+            <span class="test carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
-      <!-- <ul class="timeline-exp">
-        <li class="career-dates" dates="Jan. 2021 to PRESENT">
-          <div class="company-row row">
-            <div class="company-logo-col col-lg-2 col-md-2 col-sm-2 d-flex flex-wrap align-items-center">
-              <img id="mesa-logo-click" class="company-logo img-fluid" src="images/mesa-logo.png" alt="mesa-logo">
-            </div>
-            <div class="what-i-do col-lg-10 col-md-10 col-sm-10">
-              <h1 class="exp-position mb-3">Automation & Robotics Engineer @ MESA Ceramics</h1>
-              <h2 class="exp-type-job mb-3">Full-time</h2>
-            </div>
-          </div>
-          <p>
-            <button class="learn-more-btns-blue-bg btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse-mesa" aria-expanded="false" aria-controls="collapseExample">
-              Learn More <i class="far fa-arrow-alt-circle-down"></i>
-            </button>
-          </p>
-          <div class="collapse" id="collapse-mesa">
-            <div class="learn-more-cards-blue-bg card card-body">
-              <p class="mb-2">MESA Ceramics is a young ceramic tableware company founded in 2017 focused on stoneware articles.</p>
-              <p class="mb-2">I was hired to be the lead automation & robotics engineer of made in Germany robotized isostatic pressing machines (<a class="links-experience" href="https://www.dorst.de/en/pht200-with-fettling-robot-rpt.html">PHT200</a> by DORST
-              Technologies)
-              and a high pressure casting machine (<a class="links-experience" href="https://www.dorst.de/en/pht200-with-fettling-robot-rpt.html">DGM120</a> by DORST Technologies).</p>
-              <p>In this position I'm responsible for the diagnostics, troubleshooting and teaching of the robots (ABB) ensuring the production line's cadency as well as the quality of the product (fettling, finishing, integral structure of the article i.e no fissures, no bendings).</p>
-            </div>
-          </div>
-        </li>
-        <hr class="hr-experience">
-        <li class="career-dates" dates="Fev. 2020 to Jul. 2020">
-          <div class="company-row row">
-            <div class="company-logo-col col-lg-2 col-md-2 col-sm-2 d-flex flex-wrap align-items-center">
-              <img id="oli-logo-click" class="company-logo img-fluid" src="images/oli-logo.png" alt="oli-logo">
-            </div>
-            <div class="what-i-do col-lg-10 col-md-10 col-sm-10">
-              <h1 class="exp-position mb-3">Automation Engineer @ OLI</h1>
-              <h2 class="exp-type-job mb-3">Intership (Master's)</h2>
-            </div>
-          </div>
-          <p>
-            <button class="learn-more-btns-blue-bg btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse-oli" aria-expanded="false" aria-controls="collapse-oli">
-              Learn More <i class="far fa-arrow-alt-circle-down"></i>
-            </button>
-          </p>
-          <div class="collapse" id="collapse-oli">
-            <div class="learn-more-cards-blue-bg card card-body">
-              <p class="mb-2">OLI Sistemas Sanitários S.A. is a portuguese multinational and the largest cistern producer in Southern Europe, owning the OLI bath solutions brand, making it my first contact with a large company.</p>
-              <p class="mb-2">This is where I developed my Master's thesis, whose main objective was to automatically update the manufacturing orders of three assembly lines through an IoT solution.</p>
-              <p>A prototype of an embedded system (based on an ESP32 microcontroller) would interpret data from a PROFIBUS network, send it to a computer via the company's network (using MQTT)
-                who would then interact with the database to update the manufacturing orders. Additionally a web UI based on Bootstrap Vue and Vue.JS was developed to display production information. All tools used were open-source.</p>
-            </div>
-          </div>
-        </li>
-        <hr class="hr-experience">
-        <li class="career-dates" dates="Jul. 2019 to Aug. 2019">
-          <div class="company-row row">
-            <div class="company-logo-col col-lg-2 col-md-2 col-sm-2 d-flex flex-wrap align-items-center">
-              <img id="atena-logo-click" class="company-logo img-fluid" src="images/atena-logo.png" alt="atena-logo">
-            </div>
-            <div class="what-i-do col-lg-10 col-md-10 col-sm-10">
-              <h1 class="exp-position mb-3">Automation & Robotics Engineer @ Atena</h1>
-              <h2 class="exp-type-job mb-3">Summer Intership</h2>
-            </div>
-          </div>
-          <p>
-            <button class="learn-more-btns-blue-bg btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse-atena-b" aria-expanded="false" aria-controls="collapseExample">
-              Learn More <i class="far fa-arrow-alt-circle-down"></i>
-            </button>
-          </p>
-          <div class="collapse" id="collapse-atena-b">
-            <div class="learn-more-cards-blue-bg card card-body">
-              
-            </div>
-          </div>
-        </li>
-        <hr class="hr-experience">
-        <li class="career-dates" dates="Jul. 2018 to Aug. 2019">
-          <div class="company-row row">
-            <div class="company-logo-col col-lg-2 col-md-2 col-sm-2 d-flex flex-wrap align-items-center">
-              <img id="atena-logo-click" class="company-logo img-fluid" src="images/atena-logo.png" alt="atena-logo">
-            </div>
-            <div class="what-i-do col-lg-10 col-md-10 col-sm-10">
-              <h1 class="exp-position mb-3">Automation Engineer @ Atena</h1>
-              <h2 class="exp-type-job mb-3">Summer Intership</h2>
-            </div>
-          </div>
-          <p>
-            <button class="learn-more-btns-blue-bg btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse-atena-a" aria-expanded="false" aria-controls="collapseExample">
-              Learn More <i class="far fa-arrow-alt-circle-down"></i>
-            </button>
-          </p>
-          <div class="collapse" id="collapse-atena-a">
-            <div class="learn-more-cards-blue-bg card card-body">
-              <p class="mb-2"> Atena is a company specialized in developing machinery and production systems with over 2 decades
-                of experience.</p>
-              <p class="mb-2">This summer internship, which lasted 7 weeks, was my first contact with the job market.</p>
-              <p>In it I helped developing real production systems for the automotive industry
-                by programming PLCs (Siemens TIA Portal) as well as electrical schematics (using EPLAN),
-                making it very worthwhile for me professionally.</p>
-            </div>
-          </div>
-        </li>
-      </ul> -->
-    </div>
-  </section>
+    </section>
     <!-- EDUCATION SECTION -->
-    <!--
-  <section class="" id="education">
-    <div class="block block--white container-fluid">
-      <header class="block__header">
-        <span class="block__heading-icons--black fas fa-graduation-cap"></span>
-        <h1 class="block__heading block__heading--dark">Education</h1>
-      </header>
-      <ul class="timeline-education">
-        <li class="education-dates" dates="Sep. 2015 to Nov. 2020">
-          <div class="company-row row">
-            <div class="company-logo-col col-lg-2 col-md-2 col-sm-2 d-flex flex-wrap align-items-center">
-              <img id="ua-logo-click" class="company-logo img-fluid" src="images/ua-logo.png" alt="ua-logo">
-            </div>
-            <div class="what-i-do col-lg-10 col-md-10 col-sm-10">
-              <h1 class="edu-school mb-3">Universidade de Aveiro</h1>
-              <h2 class="edu-major mb-3">Master's in Mechanical Engineering</h2>
-            </div>
+    <section class="" id="education">
+      <div class="block block--white container-fluid">
+        <header class="block__header">
+          <div class="d-flex justify-content-center align-items-center">
+            <span class="block__heading-icons block__heading-icons--black fas fa-graduation-cap"></span>
+            <h1 class="block__heading block__heading--dark">Education</h1>
           </div>
-          <p>
-            <button class="learn-more-btns-white-bg btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse-ua" aria-expanded="false" aria-controls="collapseExample">
-              Learn More <i class="far fa-arrow-alt-circle-down"></i>
-            </button>
-          </p>
-          <div class="collapse" id="collapse-ua">
-            <div class="learn-more-cards-white-bg card card-body">
-              <p class="mb-2"> In Universidade de Aveiro (University of Aveiro) I got my Master's in Mechanical Engineering.</p>
-              <p class="mb-2">Besides the usual curriculum which includes
-                mechanical project (CAD with SolidWorks) and structural analysis there is a strong focus on mechatronics (PLCs and electrical project basics)
-                and programming (VisualBasic, Web Languages, machine vision with Matlab and Sherlock, closed/open loop control systems and PID controllers with Matlab and Simulink).</p>
-              <p>On my Master's I also chose additional subjects in the mechatronics/programming field, learning about C, robotics,
-                microcontrollers, SQL, Node.JS and a bit of Python.</p>
-              <p>Graduated <a href="https://uapt33090-my.sharepoint.com/:f:/g/personal/fabio_jr_ua_pt/Eon4ITldxN1EtiF2tb9kgSUBX0pBO7Bo3w-oOmslxJSRkA?e=Z21fVx">Cum Laude</a>.</p>
+        </header>
+        <div class="block__description block__description--dark">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, sint. Non reiciendis veritatis fugiat maiores, saepe assumenda fugit quis est aperiam omnis sequi, accusamus consequatur aut pariatur atque nesciunt eligendi.</p>
+        </div>
+        <!-- <ul class="timeline-education">
+          <li class="education-dates" dates="Sep. 2015 to Nov. 2020">
+            <div class="company-row row">
+              <div class="company-logo-col col-lg-2 col-md-2 col-sm-2 d-flex flex-wrap align-items-center">
+                <img id="ua-logo-click" class="company-logo img-fluid" src="images/ua-logo.png" alt="ua-logo">
+              </div>
+              <div class="what-i-do col-lg-10 col-md-10 col-sm-10">
+                <h1 class="edu-school mb-3">Universidade de Aveiro</h1>
+                <h2 class="edu-major mb-3">Master's in Mechanical Engineering</h2>
+              </div>
             </div>
-        </li>
-        <hr class="hr-education">
-        <li class="education-dates" dates="Sep. 2012 to Jul. 2015">
-          <div class="company-row row">
-            <div class="company-logo-col col-lg-2 col-md-2 col-sm-2 d-flex flex-wrap align-items-center">
-              <img class="company-logo img-fluid" src="images/esv-logo.jpg" alt="esv-logo">
+            <p>
+              <button class="learn-more-btns-white-bg btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse-ua" aria-expanded="false" aria-controls="collapseExample">
+                Learn More <i class="far fa-arrow-alt-circle-down"></i>
+              </button>
+            </p>
+            <div class="collapse" id="collapse-ua">
+              <div class="learn-more-cards-white-bg card card-body">
+                <p> In Universidade de Aveiro (University of Aveiro) I got my Master's in Mechanical Engineering.</p>
+                <p>Besides the usual curriculum which includes
+                  mechanical project (CAD with SolidWorks) and structural analysis there is a strong focus on mechatronics (PLCs and electrical project basics)
+                  and programming (VisualBasic, Web Languages, machine vision with Matlab and Sherlock, closed/open loop control systems and PID controllers with Matlab and Simulink).</p>
+                <p>On my Master's I also chose additional subjects in the mechatronics/programming field, learning about C, robotics,
+                  microcontrollers, SQL, Node.JS and a bit of Python.</p>
+                <p>Graduated <a href="https://uapt33090-my.sharepoint.com/:f:/g/personal/fabio_jr_ua_pt/Eon4ITldxN1EtiF2tb9kgSUBX0pBO7Bo3w-oOmslxJSRkA?e=Z21fVx">Cum Laude</a>.</p>
+              </div>
+          </li>
+          <hr class="hr-education">
+          <li class="education-dates" dates="Sep. 2012 to Jul. 2015">
+            <div class="company-row row">
+              <div class="company-logo-col col-lg-2 col-md-2 col-sm-2 d-flex flex-wrap align-items-center">
+                <img class="company-logo img-fluid" src="images/esv-logo.jpg" alt="esv-logo">
+              </div>
+              <div class="what-i-do col-lg-10 col-md-10 col-sm-10">
+                <h1 class="edu-school mb-3">Escola Secundária de Vagos</h1>
+                <h2 class="edu-major mb-3">High School Diploma</h2>
+              </div>
             </div>
-            <div class="what-i-do col-lg-10 col-md-10 col-sm-10">
-              <h1 class="edu-school mb-3">Escola Secundária de Vagos</h1>
-              <h2 class="edu-major mb-3">High School Diploma</h2>
+            <p>
+              <button class="learn-more-btns-white-bg btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse-esv" aria-expanded="false" aria-controls="collapse-oli">
+                Learn More <i class="far fa-arrow-alt-circle-down"></i>
+              </button>
+            </p>
+            <div class="collapse" id="collapse-esv">
+              <div class="learn-more-cards-white-bg card card-body">
+                <p> Typical highschool diploma in the sciences and technology field. Graduated <a href="https://uapt33090-my.sharepoint.com/:f:/g/personal/fabio_jr_ua_pt/Ek6idYzvzlhKlAva88CmcCYB-IblKgVSXltLPIXYZ-K8eg?e=pyefzk">with honors</a>.</p>
+              </div>
             </div>
-          </div>
-          <p>
-            <button class="learn-more-btns-white-bg btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse-esv" aria-expanded="false" aria-controls="collapse-oli">
-              Learn More <i class="far fa-arrow-alt-circle-down"></i>
-            </button>
-          </p>
-          <div class="collapse" id="collapse-esv">
-            <div class="learn-more-cards-white-bg card card-body">
-              <p> Typical highschool diploma in the sciences and technology field. Graduated <a href="https://uapt33090-my.sharepoint.com/:f:/g/personal/fabio_jr_ua_pt/Ek6idYzvzlhKlAva88CmcCYB-IblKgVSXltLPIXYZ-K8eg?e=pyefzk">with honors</a>.</p>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </section>
-  -->
+          </li>
+        </ul> -->
+      </div>
+    </section>
     <!-- CONTACT ME SECTION -->
     <!--
   <section class="" id="contact-me">
