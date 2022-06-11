@@ -1,0 +1,122 @@
+[33mcommit 081aecc2b2751783d4e32a8571b026606f2bc001[m[33m ([m[1;36mHEAD -> [m[1;32mf-migration-to-bootstrap-5[m[33m)[m
+Author: fajrocha_apc <fabio.jr@ua.pt>
+Date:   Sat Jun 11 18:35:56 2022 +0100
+
+    Vertical timeline finished, with a desktop first approach.
+
+[33mcommit 6ff8eeff7332b8f17c51e0d5ee400909e2963a6f[m
+Author: fajrocha_apc <fabio.jr@ua.pt>
+Date:   Sat Jun 11 14:58:48 2022 +0100
+
+    Added Education, still a WIP due to the vertical timeline
+
+[33mcommit fa59cdc4a696cee8a52270a80b3baf3151a5649e[m
+Author: fajrocha_apc <fabio.jr@ua.pt>
+Date:   Fri Jun 10 18:46:00 2022 +0100
+
+    Added transition to the collapse of Career section.
+
+[33mcommit 20e0fd824e1b9d14c1cc1c493a2f3de8f096805f[m[33m ([m[1;31morigin/f-migration-to-bootstrap-5[m[33m)[m
+Author: fajrocha_apc <fabio.jr@ua.pt>
+Date:   Fri Jun 10 13:58:18 2022 +0100
+
+    Finished career section, timeline and its contents. Refactor of padding of blocks.
+
+[33mcommit d4df5a666040985bd39cc2f39798f3d3f5567fbc[m
+Author: DESKTOP-ANIMP3N\fabio <fjrocha9@gmail.com>
+Date:   Wed Jun 8 01:17:15 2022 +0100
+
+    Added button and badge to the timeline, refactored the jQuery functionaly when interacting with the collapsable bellow.
+
+[33mcommit 0ebcf5dff839c26b02f513e7673a8088cdc11f04[m
+Author: DESKTOP-ANIMP3N\fabio <fjrocha9@gmail.com>
+Date:   Tue Jun 7 00:59:34 2022 +0100
+
+    More changes to the timeline component on the career section, still a WIP.
+
+[33mcommit f2241a80592ba08ae1ed36b3ee5be1df71307408[m
+Author: DESKTOP-ANIMP3N\fabio <fjrocha9@gmail.com>
+Date:   Mon Jun 6 19:59:19 2022 +0100
+
+    Refactored cards, separating structure from skin. New approach for the timeline in the Career section (still a WIP).
+
+[33mcommit c7634522ce67beab7cabee64d10ec4d7f5ecd767[m
+Author: DESKTOP-ANIMP3N\fabio <fjrocha9@gmail.com>
+Date:   Mon Jun 6 00:11:05 2022 +0100
+
+    General structure of the Career section refactored. Still a WIP.
+
+[33mcommit d9e1af2c48e9ee69d1014104bc1ae7a0b1ea1ed2[m
+Author: DESKTOP-ANIMP3N\fabio <fjrocha9@gmail.com>
+Date:   Sun Jun 5 22:32:50 2022 +0100
+
+    Redesigned the timeline component and saved its template.
+
+[33mcommit 946589338a4860da6e13d9aa7f850377c694dd3f[m
+Author: DESKTOP-ANIMP3N\fabio <fjrocha9@gmail.com>
+Date:   Sun Jun 5 16:56:38 2022 +0100
+
+    Refactored skills section to have cards.
+
+[33mcommit 56b12e3fb25ff2c1d18dd408031d626d57701c92[m
+Author: DESKTOP-ANIMP3N\fabio <fjrocha9@gmail.com>
+Date:   Sun Jun 5 13:09:08 2022 +0100
+
+    Refactored heading to include a variation with an icon.
+
+[33mcommit 0fff449c2f79e38278093b38a1c923e45b42e71a[m
+Author: DESKTOP-ANIMP3N\fabio <fjrocha9@gmail.com>
+Date:   Sun Jun 5 00:20:38 2022 +0100
+
+    Refactored the "Me" section + already migrating this to Bootstrap 5.
+
+[33mcommit 606b28a81e075b533ce9fc02bd581146ccf56b22[m
+Author: DESKTOP-ANIMP3N\fabio <fjrocha9@gmail.com>
+Date:   Sat Jun 4 15:53:24 2022 +0100
+
+    Refactored navbar.
+
+[33mcommit 2e25f64e0aed46ebc3d332fd942c3c63b840da79[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Merge: 5905852 2e8dae7
+Author: fajrocha <63866586+fajrocha@users.noreply.github.com>
+Date:   Sat Jun 4 11:55:42 2022 +0100
+
+    Merge pull request #1 from fajrocha/new-profile-pic
+    
+    Refactored headers, getting rid of the bootstrap row and column struc…
+
+[33mcommit 2e8dae7f42c6482cd8f6fc3ee37892c2940de891[m
+Author: DESKTOP-ANIMP3N\fabio <fjrocha9@gmail.com>
+Date:   Sat Jun 4 11:51:46 2022 +0100
+
+    Refactored headers, getting rid of the bootstrap row and column structure. Updated the profile picture.
+
+[33mcommit 59058527559611a3b56ad316f9de9f32a4f5e9fc[m
+Author: fajrocha <fabio.jr@ua.pt>
+Date:   Sat Jul 3 11:19:56 2021 +0100
+
+    Bugged jQuery link solved (hopefully!). Added links to my education.
+
+[33mcommit f7b3d28e0429028a4fbe2da2bfd8138639e7f835[m
+Author: fajrocha <fabio.jr@ua.pt>
+Date:   Sun Jun 27 22:33:05 2021 +0100
+
+    Improvements in the format of mobile resolutions. Added another skill.
+
+[33mcommit 3e01366448a84841d2def8d14c8e10e13c8b8864[m
+Author: fajrocha <63866586+fajrocha@users.noreply.github.com>
+Date:   Sun Jun 27 15:19:57 2021 +0100
+
+    Readme Updated
+
+[33mcommit 169c5fa6074e5f6eef124bdaec73e042bc18e2c6[m
+Author: fajrocha <63866586+fajrocha@users.noreply.github.com>
+Date:   Sun Jun 27 15:15:30 2021 +0100
+
+    Website launch.
+
+[33mcommit bec00bdfeb75b3dd108bed3813ff473c17011fb7[m
+Author: fajrocha <63866586+fajrocha@users.noreply.github.com>
+Date:   Sun Jun 27 15:14:43 2021 +0100
+
+    Initial commit
