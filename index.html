@@ -29,6 +29,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles2.css" />
 
     <!-- Font Awesome -->
     <link
@@ -228,7 +229,7 @@
           <div class="carousel-item active">
             <div class="d-flex justify-content-center align-items-center timeline">
               <span class="timeline__line timeline__line--hidden"></span>
-              <h2 class="timeline__date shadow--primary text-shadow--primary">Oct. 2021 - <br>Present</h2>
+              <span class="timeline__date shadow--primary text-shadow--primary">Oct. 2021 - <br>Present</span>
               <span class="timeline__line"></span>
             </div>
             <div class="container-fluid timeline__dotted-line"></div>
@@ -286,7 +287,7 @@
           <div class="carousel-item">
             <div class="d-flex justify-content-center align-items-center timeline">
               <span class="timeline__line"></span>
-              <h2 class="timeline__date">Jan. 2021 - <br>Sep. 2021</h2>
+              <span class="timeline__date">Jan. 2021 - <br>Sep. 2021</span>
               <span class="timeline__line"></span>
             </div>
             <div class="container timeline__dotted-line"></div>
@@ -321,9 +322,9 @@
             <div class="collapse block__description block__description--white" id="collapse--mesa">
               <p>MESA Ceramics is a young ceramics company founded in 2017 focused on stoneware tableware articles.</p>
               <p>I was hired to be the lead robotics engineer of made in Germany robotized isostatic pressing machines 
-              (<a class="links-experience" href="https://www.dorst.de/en/pht200-with-fettling-robot-rpt.html">PHT200</a>)
+              (<a class="links links--white" href="https://www.dorst.de/en/pht200-with-fettling-robot-rpt.html">PHT200</a>)
               and a high pressure casting machine 
-              (<a class="links-experience" href="https://www.dorst.de/en/pht200-with-fettling-robot-rpt.html">DGM120</a>) by DORST Technologies.</p>
+              (<a class="links links--white" href="https://www.dorst.de/en/pht200-with-fettling-robot-rpt.html">DGM120</a>) by DORST Technologies.</p>
               <p>In this position I was responsible for the diagnostics, troubleshooting and teaching of the robots (ABB) ensuring the 
                 production line's OEE as well as the quality of the product (fettling, finishing, integral structure of the article 
                 i.e no fissures, no bendings).
@@ -337,7 +338,7 @@
           <div class="carousel-item">
             <div class="d-flex justify-content-center align-items-center timeline">
               <span class="timeline__line"></span>
-              <h2 class="timeline__date">Feb. 2020 - <br>Jul. 2020</h2>
+              <span class="timeline__date">Feb. 2020 - <br>Jul. 2020</span>
               <span class="timeline__line"></span>
             </div>
             <div class="container timeline__dotted-line"></div>
@@ -398,7 +399,7 @@
           <div class="carousel-item">
             <div class="d-flex justify-content-center align-items-center timeline">
               <span class="timeline__line"></span>
-              <h2 class="timeline__date">Jul. 2019 - <br>Aug. 2019</h2>
+              <span class="timeline__date">Jul. 2019 - <br>Aug. 2019</span>
               <span class="timeline__line"></span>
             </div>
             <div class="container timeline__dotted-line"></div>
@@ -447,7 +448,7 @@
           <div class="carousel-item">
             <div class="d-flex justify-content-center align-items-center timeline">
               <span class="timeline__line"></span>
-              <h2 class="timeline__date">Jul. 2018 - <br>Aug. 2018</h2>
+              <span class="timeline__date">Jul. 2018 - <br>Aug. 2018</span>
               <span class="timeline__line timeline__line--hidden"></span>
             </div>
             <div class="container timeline__dotted-line"></div>
@@ -506,67 +507,76 @@
       </div>
     </section>
     <!-- EDUCATION SECTION -->
-    <section class="" id="education">
-      <div class="block block--white container-fluid">
-        <header class="block__header">
-          <div class="d-flex justify-content-center align-items-center">
-            <span class="block__heading-icons block__heading-icons--black fas fa-graduation-cap"></span>
-            <h1 class="block__heading block__heading--dark">Education</h1>
-          </div>
-        </header>
-        <div class="block__description block__description--dark">
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, sint. Non reiciendis veritatis fugiat maiores, saepe assumenda fugit quis est aperiam omnis sequi, accusamus consequatur aut pariatur atque nesciunt eligendi.</p>
+    <section class="block block--white block__background" id="education">
+      <header class="block__header">
+        <div class="d-flex justify-content-center align-items-center">
+          <span class="block__heading-icons block__heading-icons--black fas fa-graduation-cap"></span>
+          <h1 class="block__heading block__heading--dark">Education</h1>
         </div>
-        <!-- <ul class="timeline-education">
-          <li class="education-dates" dates="Sep. 2015 to Nov. 2020">
-            <div class="company-row row">
-              <div class="company-logo-col col-lg-2 col-md-2 col-sm-2 d-flex flex-wrap align-items-center">
-                <img id="ua-logo-click" class="company-logo img-fluid" src="images/ua-logo.png" alt="ua-logo">
-              </div>
-              <div class="what-i-do col-lg-10 col-md-10 col-sm-10">
-                <h1 class="edu-school mb-3">Universidade de Aveiro</h1>
-                <h2 class="edu-major mb-3">Master's in Mechanical Engineering</h2>
-              </div>
+      </header>
+      <div class="block__description block__description--success text-shadow--primary">
+        <a href="https://www.mesa-ceramics.com/">
+          <img class="timeline__milestone-icon mb-3" src="images/ua-logo.png" alt="Mesa's logo.">
+        </a>
+        <p>
+          In University of Aveiro I got my Master's in Mechanical Engineering.
+        </p>
+        <p>
+          Going in I assumed I would be a CAD Engineer, focusing on mechanical project and structural analysis, however the first time I 
+          touched programing (on a PLC!) I fell in love with programming. From there I also learnt about industrial robotics, machine vision, 
+          microcontrollers and dabbled in the very basics of web languages and relational databases (with MySQL)
+        </p>
+        <p>
+          Additionally I had some subjects where I learnt Visual Basic and C, this last one coupled with Linux which
+          introduced me to the CLI and how powerful and useful it can be. Control version with Git was also introduced to me during this time.
+          Combining all this knowledge - (My)SQL, C, PLCs and Web Languages - allowed me to develop my Master's Thesis project at OLI.
+        </p>
+        <p>Graduated <a class="links links--success" href="https://uapt33090-my.sharepoint.com/:f:/g/personal/fabio_jr_ua_pt/Eon4ITldxN1EtiF2tb9kgSUBX0pBO7Bo3w-oOmslxJSRkA?e=Z21fVx">Cum Laude</a>.</p>
+      </div>
+    </section>
+    <section class="block block--white" id="education">
+      <header class="block__header">
+        <div class="d-flex justify-content-center align-items-center">
+          <h2>And from there?</h2>
+        </div>
+      </header>
+      <div class="block__description block__description--dark text-shadow--primary">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque maiores alias, non ea eius, in molestias, soluta vitae officia minima quo! Officiis quas eveniet officia in aliquid nobis ipsa mollitia?</p>
+      </div>
+      <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="v-timeline">
+                  <div class="v-timeline__segm">
+                      <div class="v-timeline__content">
+                          <div class="v-timeline__icon"><i class="fa fa-globe"></i></div>
+                          <h3 class="v-timeline__title">Web Designing</h3>
+                          <p class="v-timeline__description">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo Integer males uada tellus lorem, et condimentum neque commodo
+                          </p>
+                      </div>
+                  </div>
+                  <div class="v-timeline__segm">
+                      <div class="v-timeline__content">
+                          <div class="v-timeline__icon"><i class="fa fa-rocket"></i></div>    
+                          <h3 class="v-timeline__title">Web Development</h3>
+                          <p class="v-timeline__description">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo Integer males uada tellus lorem, et condimentum neque commodo
+                          </p>
+                      </div>
+                  </div>
+                  <div class="v-timeline__segm">
+                    <div class="v-timeline__content">
+                        <div class="v-timeline__icon"><i class="fa fa-rocket"></i></div>    
+                        <h3 class="v-timeline__title">Web Development</h3>
+                        <p class="v-timeline__description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo Integer males uada tellus lorem, et condimentum neque commodo
+                        </p>
+                    </div>
+                </div>
+                </div>
             </div>
-            <p>
-              <button class="learn-more-btns-white-bg btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse-ua" aria-expanded="false" aria-controls="collapseExample">
-                Learn More <i class="far fa-arrow-alt-circle-down"></i>
-              </button>
-            </p>
-            <div class="collapse" id="collapse-ua">
-              <div class="learn-more-cards-white-bg card card-body">
-                <p> In Universidade de Aveiro (University of Aveiro) I got my Master's in Mechanical Engineering.</p>
-                <p>Besides the usual curriculum which includes
-                  mechanical project (CAD with SolidWorks) and structural analysis there is a strong focus on mechatronics (PLCs and electrical project basics)
-                  and programming (VisualBasic, Web Languages, machine vision with Matlab and Sherlock, closed/open loop control systems and PID controllers with Matlab and Simulink).</p>
-                <p>On my Master's I also chose additional subjects in the mechatronics/programming field, learning about C, robotics,
-                  microcontrollers, SQL, Node.JS and a bit of Python.</p>
-                <p>Graduated <a href="https://uapt33090-my.sharepoint.com/:f:/g/personal/fabio_jr_ua_pt/Eon4ITldxN1EtiF2tb9kgSUBX0pBO7Bo3w-oOmslxJSRkA?e=Z21fVx">Cum Laude</a>.</p>
-              </div>
-          </li>
-          <hr class="hr-education">
-          <li class="education-dates" dates="Sep. 2012 to Jul. 2015">
-            <div class="company-row row">
-              <div class="company-logo-col col-lg-2 col-md-2 col-sm-2 d-flex flex-wrap align-items-center">
-                <img class="company-logo img-fluid" src="images/esv-logo.jpg" alt="esv-logo">
-              </div>
-              <div class="what-i-do col-lg-10 col-md-10 col-sm-10">
-                <h1 class="edu-school mb-3">Escola Secundária de Vagos</h1>
-                <h2 class="edu-major mb-3">High School Diploma</h2>
-              </div>
-            </div>
-            <p>
-              <button class="learn-more-btns-white-bg btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse-esv" aria-expanded="false" aria-controls="collapse-oli">
-                Learn More <i class="far fa-arrow-alt-circle-down"></i>
-              </button>
-            </p>
-            <div class="collapse" id="collapse-esv">
-              <div class="learn-more-cards-white-bg card card-body">
-                <p> Typical highschool diploma in the sciences and technology field. Graduated <a href="https://uapt33090-my.sharepoint.com/:f:/g/personal/fabio_jr_ua_pt/Ek6idYzvzlhKlAva88CmcCYB-IblKgVSXltLPIXYZ-K8eg?e=pyefzk">with honors</a>.</p>
-              </div>
-            </div>
-          </li>
-        </ul> -->
+        </div>
       </div>
     </section>
     <!-- CONTACT ME SECTION -->
