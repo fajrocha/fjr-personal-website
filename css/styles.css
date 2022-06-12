@@ -592,7 +592,7 @@ h2 {
 .v-timeline__segm:before,
 .v-timeline__segm:after {
   content: '';
-  background-color: #DA2677;
+  background-color: #6A097D;
   height: 2.5rem;
   width: 2.5rem;
   border-radius: 50%;
@@ -602,7 +602,7 @@ h2 {
 
 .v-timeline__segm:nth-child(even):before,
 .v-timeline__segm:nth-child(even):after {
-  background-color: #4EB543;
+  background-color: #3d8cf2;
 }
 
 .v-timeline__segm:before,
@@ -640,7 +640,7 @@ h2 {
 
 .v-timeline__content {
   color: #fff;
-  background: linear-gradient(#D02578,#DA2677);
+  background: linear-gradient(to right, #03256C, #6A097D);
   min-height: 130px;
   padding: 0 0 6rem;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
@@ -656,7 +656,8 @@ h2 {
 }
 
 .v-timeline__segm:nth-child(even) .v-timeline__content {
-  background: linear-gradient(#80B02C,#4EB543);
+  /* background: linear-gradient(#80B02C,#4EB543); */
+  background: linear-gradient(to right, #3d8cf2, #04009A);
 }
 
 @media screen and (min-width:576px) {
@@ -666,7 +667,7 @@ h2 {
 }
 
 .v-timeline__title {
-  color: #DA2677;
+  color: #6A097D;
   background-color: #fff;
   font-size: 2.1rem;
   font-weight: 600;
@@ -676,7 +677,7 @@ h2 {
 }
 
 .v-timeline__segm:nth-child(even) .v-timeline__title {
-  color: #4EB543;
+  color: #3d8cf2;
 }
 
 .v-timeline__description,
