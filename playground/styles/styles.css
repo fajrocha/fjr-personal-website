@@ -53,12 +53,28 @@
 }
 
 .main-timeline .timeline-content:hover{ text-decoration: none; }
+
+/* ICONS */
+
 .main-timeline .timeline-icon{
   font-size: 40px;
   line-height: 40px;
   position: absolute;
   bottom: 15px;
   right: 16px;
+}
+
+.main-timeline .timeline:nth-child(even) .timeline-icon{
+  right: auto;
+  left: 16px;
+}
+
+@media screen and (max-width:768px){
+  .main-timeline .timeline-icon,
+  .main-timeline .timeline:nth-child(even) .timeline-icon{
+      left: 16px;
+      right: auto;
+  }
 }
 
 .main-timeline .title{
@@ -97,10 +113,6 @@
 .main-timeline .timeline:nth-child(even):after{
   right: auto;
   left: 20px;
-}
-.main-timeline .timeline:nth-child(even) .timeline-icon{
-  right: auto;
-  left: 16px;
 }
 
 .main-timeline .timeline:nth-child(even) .description {
@@ -167,11 +179,6 @@
   .main-timeline .description,
   .main-timeline .timeline:nth-child(even) .description{
       margin: 20px 20px 0 80px;
-  }
-  .main-timeline .timeline-icon,
-  .main-timeline .timeline:nth-child(even) .timeline-icon{
-      left: 16px;
-      right: auto;
   }
 }
 @media screen and (max-width:576px){
