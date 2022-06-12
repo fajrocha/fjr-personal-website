@@ -2,7 +2,6 @@
   --color-white: #FAF3F3;
   --color-black: #000;
   --color-success: #005941;
-  --size-vtimeline-circle: 3.2rem;
 }
 
 html {
@@ -130,7 +129,7 @@ h2 {
 }
 
 
-@media (min-width: 576px) {
+@media (min-width:  576px) {
   .block__heading {
     font-size: 7rem;
   }
@@ -168,6 +167,10 @@ h2 {
     font-size: 6rem;
     margin-right: 1%;
   }
+}
+
+.block__icons-description {
+  font-size: 6rem;
 }
 
 .block__heading-icons--white {
@@ -547,9 +550,21 @@ h2 {
 
 /* Vertical Timeline */
 
+.v-timeline-container {
+  margin-top: 2%;
+  padding: 0 4%;
+}
+
+@media screen and (min-width:768px) {
+  .v-timeline-container {
+    margin-top: 2%;
+    padding: 0 8%;
+  }
+}
+
 .v-timeline{
   font-family: 'Montserrat', sans-serif;
-  padding: 2.5rem 1rem 0;
+  padding: 0 1rem;
 }
 
 .v-timeline:after {
@@ -571,7 +586,7 @@ h2 {
   position: relative;
 }
 
-@media screen and (min-width:768px) {
+@media (min-width: 768px) {
   .v-timeline__segm {
     width: calc(50% + 9px);
     padding: 2rem 3rem 2rem 0;
@@ -640,6 +655,10 @@ h2 {
   }
 }
 
+.v-timeline__segm--first {
+  margin: 0;
+}
+
 .v-timeline__content {
   color: #fff;
   background: linear-gradient(to right, #03256C, #6A097D);
@@ -664,7 +683,7 @@ h2 {
   background: linear-gradient(to right, #3d8cf2, #04009A);
 }
 
-@media screen and (min-width:576px) {
+@media screen and (min-width: 576px) {
   .v-timeline__content { 
     padding: 0 0 2rem;
   }
@@ -680,7 +699,7 @@ h2 {
   padding: 1.2rem;
 }
 
-@media screen and (min-width:576px) {
+@media screen and (min-width: 576px) {
   .v-timeline__title { 
     font-size: 2.1rem;
   }
@@ -695,7 +714,7 @@ h2 {
     padding: 2rem 2rem 0 2rem;
 }
 
-@media screen and (min-width:576px) {
+@media screen and (min-width: 576px) {
   .v-timeline__description,
   .v-timeline__segm:nth-child(even) .v-timeline__description {
       padding: 2rem 2rem 0 8rem;
@@ -947,10 +966,9 @@ h2 {
 }
 
 /* ______________ CONTACT ME SECTION _______ */
-.contact-me-container {
+.contactme-container {
+  margin-top: 3%;
   text-align: center;
-  padding: 0 25%;
-  background-color: inherit;
 }
 
 /*______________FOOTER______________________ */
