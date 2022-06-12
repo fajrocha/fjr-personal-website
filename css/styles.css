@@ -23,16 +23,9 @@ body {
 }
 
 p {
-  line-height: 1.5;
   font-size: 1.5rem;
-  font-weight: 500;
+  line-height: 1.5;
   letter-spacing: 1px;
-}
-
-@media (min-width: 992px) {
-  p {
-    font-size: 1.8rem;
-  }
 }
 
 h2 {
@@ -191,6 +184,11 @@ h2 {
   text-align: center;
 }
 
+.block__description p {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
 @media (min-width: 768px) {
   .block__description {
     margin-top: 2%;
@@ -201,6 +199,10 @@ h2 {
   .block__description {
     padding: 0 25%;
     margin-top: 1%;
+  }
+
+  .block__description p {
+    font-size: 1.8rem;
   }
 }
 
@@ -216,7 +218,7 @@ h2 {
   color: var(--color-success);
 }
 
-.block__description-last {
+.p__last {
   margin-bottom: 0;
 }
 
@@ -540,14 +542,14 @@ h2 {
 /* Collapse */
 
 .collapsing {
-  transition: .9s linear;
+  transition: .4s linear;
 }
 
 /* Vertical Timeline */
 
 .v-timeline{
   font-family: 'Montserrat', sans-serif;
-  padding: 2.5rem 1rem;
+  padding: 2.5rem 1rem 0;
 }
 
 .v-timeline:after {
@@ -649,10 +651,12 @@ h2 {
   overflow: hidden;
   position: relative;
   z-index: 1;
+  transition: transform 0.2s ease;
 }
 
 .v-timeline__content:hover { 
   text-decoration: none;
+  transform: scale(1.01);
 }
 
 .v-timeline__segm:nth-child(even) .v-timeline__content {
@@ -669,11 +673,17 @@ h2 {
 .v-timeline__title {
   color: #6A097D;
   background-color: #fff;
-  font-size: 2.1rem;
+  font-size: 1.8rem;
   font-weight: 600;
   text-align: center;
   text-transform: uppercase;
   padding: 1.2rem;
+}
+
+@media screen and (min-width:576px) {
+  .v-timeline__title { 
+    font-size: 2.1rem;
+  }
 }
 
 .v-timeline__segm:nth-child(even) .v-timeline__title {
@@ -682,8 +692,6 @@ h2 {
 
 .v-timeline__description,
 .v-timeline__segm:nth-child(even) .v-timeline__description{
-    font-size: 1.5rem;
-    font-weight: 300;
     padding: 2rem 2rem 0 2rem;
 }
 
@@ -721,6 +729,10 @@ h2 {
   .v-timeline .v-timeline__segm:nth-child(even) .v-timeline__icon {
     left: 16px;
   }
+}
+
+.v-timeline__strong {
+  font-weight: 500;
 }
 
 /*_______________EXPERIENCE SECTION_________________*/
@@ -1102,13 +1114,5 @@ h2 {
 @media (max-width: 567px) {
   .what-i-do {
     padding-left: 0;
-  }
-}
-
-/* Smooth transition on collapses' */
-@media (prefers-reduced-motion: reduce) {
-  .collapsing {
-    transition-property: height, visibility;
-    transition-duration: .35s;
   }
 }
