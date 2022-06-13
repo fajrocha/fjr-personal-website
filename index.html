@@ -16,12 +16,6 @@
     />
 
     <!--CSS Stylesheets-->
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
-      crossorigin="anonymous"
-    /> -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -49,11 +43,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!-- <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-      crossorigin="anonymous"
-    ></script> -->
     <script src="js/script.js"></script>
   </head>
 
@@ -75,7 +64,7 @@
                 <a class="nav-link" href="#skills">Skills</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#experience">Career</a>
+                <a class="nav-link" href="#career">Career</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#education">Education</a>
@@ -87,11 +76,21 @@
           </div>
         </nav>
         <header class="block__header block__header--blue">
-          <img
-            class="block__photo img-fluid"
-            src="images/my-photo.webp"
-            alt="A picture of me"
-          />
+          <picture>
+            <source
+              type="image/webp"
+              srcset="images/my-photo.webp"
+            />
+            <source
+              type="image/jpg"
+              srcset="images/my-photo.jpg"
+            />
+            <img
+              class="block__photo img-fluid"
+              src="images/my-photo.jpg"
+              alt="A picture of me"
+            />
+          </picture>
           <h1 class="block__heading block__heading--white">I'm Fábio</h1>
           <div class="block__description block__description--white text-shadow--primary">
             <p>
@@ -125,7 +124,7 @@
     <section class="block block--white" id="skills">
       <header class="block__header mb-3">
           <div class="d-flex justify-content-center align-items-center">
-            <span class="block__heading-icons block__heading-icons--dark fas fa-brain"></span>
+            <span class="block__heading-icons icon--dark fas fa-brain"></span>
             <h1 class="block__heading">Skills</h1>
           </div>
           <div class="block__description block__description--dark">
@@ -212,10 +211,10 @@
         </div>
       </div>
     </section>
-    <section class="block block--blue-dark" id="experience">
+    <section class="block block--blue-dark" id="career">
       <header class="block__header">
         <div class="d-flex justify-content-center align-items-center">
-          <span class="block__heading-icons block__heading-icons--white fas fa-user-tie"></span>
+          <span class="block__heading-icons icon--white fas fa-user-tie"></span>
           <h1 class="block__heading block__heading--white">Career</h1>
         </div>
       </header>
@@ -232,8 +231,18 @@
               <div class="d-flex justify-content-center align-items-center">
                 <div class="card shadow--primary text-white">
                   <div class="card-header card-header--secondary">
-                    <a href="https://conti-engineering.com/">
-                      <img class="timeline__milestone-icon img-fluid" src="images/ces-logo.png" alt="CES's logo.">
+                    <a href="https://conti-engineering.com/" target="_blank">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          srcset="images/ces-logo.webp"
+                        />
+                        <source
+                          type="image/png"
+                          srcset="images/ces-logo.png"
+                        />
+                        <img class="timeline__milestone-icon img-fluid" src="images/ces-logo.png" alt="Continental Engineering Services logo.">
+                      </picture>
                     </a>
                   </div>
                   <div class="card-body card-body--grey">
@@ -272,7 +281,7 @@
                 the machines to Conti's proprietary MES Suite (which handles OEE calculation, downtime tracking and recipe management) through 
                 a standardized interface for all machines. 
               </p>
-              <p>
+              <p class="p__last">
                 This standard middleware is capable of generating standard alarms, losses and product flagging, managing machine interlock
                 deriving from material validation accoriding to the respective manufacturing order, quantifying material consumption and 
                 production counters and ensuring the correct implementation of normalized recipe parameters that come from the MES Suite. 
@@ -291,7 +300,17 @@
                 <div class="card shadow--primary text-white">
                   <div class="card-header card-header--secondary">
                     <a href="https://www.mesa-ceramics.com/">
-                      <img class="timeline__milestone-icon" src="images/mesa-logo.png" alt="Mesa's logo.">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          srcset="images/mesa-logo.webp"
+                        />
+                        <source
+                          type="image/png"
+                          srcset="images/mesa-logo.png"
+                        />
+                        <img class="timeline__milestone-icon" src="images/mesa-logo.png" alt="Mesa Ceramics logo.">
+                      </picture>
                     </a>
                   </div>
                   <div class="card-body card-body--grey">
@@ -323,7 +342,7 @@
               <p>In this position I was responsible for the diagnostics, troubleshooting and teaching of the robots (ABB) ensuring the 
                 production line's OEE as well as the quality of the product (fettling, finishing, integral structure of the article).
               </p>
-              <p>This was also a great learning opportunity since I was in close contact with the Dorst engineers (robotics, mechanical), 
+              <p class="p__last">This was also a great learning opportunity since I was in close contact with the Dorst engineers (robotics, mechanical), 
                 practicing English on a daily basis, cooperating and coordinating the activities like the implementaton of new products and the
                 optimization of cycle times.
               </p>
@@ -340,8 +359,18 @@
               <div class="d-flex justify-content-center align-items-center">
                 <div class="card shadow--primary text-white">
                   <div class="card-header card-header--secondary">
-                    <a href="https://www.oli-world.com/pt/">
-                      <img class="timeline__milestone-icon" src="images/oli-logo.png" alt="OLI's logo.">
+                    <a href="https://www.oli-world.com/pt/" target="_blank">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          srcset="images/oli-logo.webp"
+                        />
+                        <source
+                          type="image/png"
+                          srcset="images/oli-logo.png"
+                        />
+                        <img class="timeline__milestone-icon" src="images/oli-logo.png" alt="OLI's logo.">
+                      </picture>
                     </a>
                   </div>
                   <div class="card-body card-body--grey">
@@ -380,7 +409,7 @@
                 interpret data from the existing PROFIBUS network, which would detect the end of the processing of a pallet and send this 
                 information to a RPi 3B+ via the company's network (using MQTT).
               </p>
-              <p>
+              <p class="p__last">
                 A MES like system was developed using Node-Red that would update these counts of the Company's Test Database, 
                 which had an exact copy of existing manufacturing orders. The MES would know the exact quantities of each pallet and what order 
                 to update through the validation of the orders at the beggining of the manufacturing processes, when a barcode would be scanned.
@@ -402,7 +431,17 @@
                 <div class="card shadow--primary text-white">
                   <div class="card-header card-header--secondary">
                     <a href="http://atena-ai.pt/">
-                      <img class="timeline__milestone-icon img-fluid" src="images/atena-logo.png" alt="Atena's logo.">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          srcset="images/atena-logo.webp"
+                        />
+                        <source
+                          type="image/png"
+                          srcset="images/atena-logo.png"
+                        />
+                        <img class="timeline__milestone-icon img-fluid" src="images/atena-logo.png" alt="Atena's logo.">
+                      </picture>
                     </a>
                   </div>
                   <div class="card-body card-body--grey">
@@ -433,7 +472,7 @@
                 This time I helped on the development of another solution for the automotive industry by programming a RS232 communication 
                 between a PLC and a magnetizer/demagnetizer to control and monitor (max) voltage, power and amperage. 
               </p>
-              <p> 
+              <p class="p__last"> 
                 On this solution I also did teaching and configured on KUKA robots, being my first contact with robotics on an industrial 
                 environment.
               </p>
@@ -450,14 +489,24 @@
               <div class="d-flex justify-content-center align-items-center">
                 <div class="card shadow--primary text-white">
                   <div class="card-header card-header--secondary">
-                    <a href="http://atena-ai.pt/">
-                      <img class="timeline__milestone-icon img-fluid" src="images/atena-logo.png" alt="Atena's logo.">
+                    <a href="http://atena-ai.pt/" target="_blank">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          srcset="images/atena-logo.webp"
+                        />
+                        <source
+                          type="image/png"
+                          srcset="images/atena-logo.png"
+                        />
+                        <img class="timeline__milestone-icon img-fluid" src="images/atena-logo.png" alt="Atena's logo.">
+                      </picture>
                     </a>
                   </div>
                   <div class="card-body card-body--grey">
                     <div class="d-flex justify-content-center align-items-center mb-2">
                       <div class="badge badge--primary text-shadow--primary shadow--primary">
-                        Automation Engineer Intern
+                        Automation Summer Intern
                       </div>
                     </div>
                     <div class="d-flex justify-content-center align-items-center">
@@ -482,7 +531,7 @@
               <p>
                 This summer internship, which lasted 7 weeks, was my first contact with the job market.
               </p>
-              <p>
+              <p class="p__last">
                 In it I helped developing real production systems for the automotive industry
                 by programming PLCs (Siemens TIA Portal) as well as designing electrical schematics (using EPLAN),
                 making it very worthwhile for me professionally.
@@ -509,8 +558,18 @@
         </div>
       </header>
       <div class="block__description block__description--success text-shadow--primary">
-        <a href="https://www.mesa-ceramics.com/">
-          <img class="timeline__milestone-icon mb-3" src="images/ua-logo.png" alt="Mesa's logo.">
+        <a href="https://www.ua.pt/" target="_blank">
+          <picture>
+            <source
+              type="image/webp"
+              srcset="images/ua-logo.webp"
+            />
+            <source
+              type="image/png"
+              srcset="images/ua-logo.png"
+            />
+            <img class="timeline__milestone-icon mb-3" src="images/ua-logo.png" alt="University of Aveiro logo.">
+          </picture>
         </a>
         <p>
           In University of Aveiro I got my Master's in Mechanical Engineering.
@@ -585,7 +644,7 @@
                         </p>
                         <p>
                           <span class="v-timeline__strong">Concepts learned:</span> Remote and Local repositories, SSH Keys, 
-                          Cloning/Initializing repositories, the different stages (Adding to Staging area, Committing and Pushing), History (git log), Branches, 
+                          cloning/initializing repositories, the different stages (Adding to Staging area, Committing and Pushing), History (git log), Branches, 
                           Merge Requests, stashing WIP, deleting commits and reverting to previous Versions. 
                         </p>
                       </div>
@@ -599,7 +658,8 @@
                       <h3 class="v-timeline__title">Data Structures</h3>
                       <div class="v-timeline__description">
                         <p>
-                          To better learn CS fundamentals I learned about the most common structures
+                          To better learn CS fundamentals I learned about the most common data structures as well as the time complexity 
+                          of operations performed on them (insertion, deletion, search).
                         </p>
                         <p>
                           <span class="v-timeline__strong">Concepts learned:</span> Big O Notation, Arrays, Linked Lists, Stacks, Queues
@@ -658,10 +718,10 @@
       </div>
     </section>
     <!-- CONTACT ME SECTION -->
-    <section class="block block--blue" id="contact-me">
+    <section class="block block--blue" id="contactme">
       <header class="block__header">
         <div class="d-flex justify-content-center align-items-center">
-          <span class="block__heading-icons block__heading-icons--white fas fa-comments"></span>
+          <span class="block__heading-icons icon--white fas fa-comments"></span>
           <h1 class="block__heading block__heading--white">Contact-me!</h1>
         </div>
       </header>
@@ -669,26 +729,43 @@
         <div class="row">
           <div class="col-lg-4 col-md-4 col-sm-6 col-6">
             <a href="https://www.linkedin.com/in/fjr09">
-              <span class="fab fa-linkedin block__icons-description block__heading-icons--white"></span>
+              <span class="fab fa-linkedin block__icons-description icon--white"></span>
             </a>           
           </div>
           <div class="col-lg-4 col-md-4 col-sm-6 col-6">
             <a href="mailto:fjrocha9@gmail.com">
-              <span class="fas fa-envelope block__icons-description block__heading-icons--white"></span>
+              <span class="fas fa-envelope block__icons-description icon--white"></span>
             </a>
           </div>
           <div class="col-lg-4 col-md-4">
             <a href="https://wa.me/351917559858">
-              <span class="fab fa-whatsapp block__icons-description block__heading-icons--white"></span>
+              <span class="fab fa-whatsapp block__icons-description icon--white"></span>
             </a>
           </div>
         </div>
       </div>
     </section>
     <!-- FOOTER -->
-    <!--
-  <footer class="block block--blue" id="footer">
-    <p class="copyright">© Copyright 2021 fjr</p>
-  </footer>
-  --></body>
+    <footer class="block block--footer block--blue" id="footer">
+      <div class="block__description block__description--dark">
+        <div class="d-flex justify-content-center align-items-center">
+          <p class="p__last me-2">hosted on</p>
+          <span class="fa-brands fa-github icon--dark me-2"></span>
+          <picture>
+            <source
+              type="image/webp"
+              srcset="images/github-pages.webp"
+            />
+            <source
+              type="image/png"
+              srcset="images/github-pages.png"
+            />
+            <img class="image-test" src="images/github-pages.png" alt="" />
+          </picture>
+          <!-- <img class="image-test" src="images/github-pages.png" alt=""> -->
+        </div>
+        <!-- <p class="p__last">© Copyright 2021 fjr</p> -->
+      </div>
+    </footer>
+  </body>
 </html>
