@@ -32,6 +32,20 @@ h2 {
   font-weight: 600;
 }
 
+/* Font Colors */
+
+.font-color--primary {
+  color: var(--color-white);
+}
+
+.font-color--secondary {
+  color: var(--color-black);
+}
+
+.font-color--success {
+  color: var(--color-success);
+}
+
 /* Blocks */
 
 .block {
@@ -88,14 +102,6 @@ h2 {
   text-align: center;
 }
 
-.block__header--blue {
-  color: var(--color-white);
-}
-
-.block__header--white {
-  color: var(--color-black);
-}
-
 .block__photo {
   max-width: 50%;
   border-radius: 100%;
@@ -130,15 +136,11 @@ h2 {
   margin: 0;
 }
 
-.block__heading--white {
-  color: var(--color-white);
-}
-
 #presentation .block__heading {
   margin: 6% 0 0;
 }
 
-#presentation .block__heading--white {
+#presentation .block__heading {
   font-size: 6rem;
   display: block;
   font-family: "Sacramento", sans-serif;
@@ -193,14 +195,6 @@ h2 {
   .block__icons-description {
     font-size: 5.5rem;
   }
-}
-
-.icon--white {
-  color: var(--color-white);
-}
-
-.icon--dark {
-  color: var(--color-black);
 }
 
 .block__description {
@@ -267,18 +261,6 @@ h2 {
   #footer .block__description p {
     font-size: 1.3rem;
   }
-}
-
-.block__description--white {
-  color: var(--color-white);
-}
-
-.block__description--dark {
-  color: var(--color-black);
-}
-
-.block__description--success {
-  color: var(--color-success);
 }
 
 .p__last {
@@ -368,7 +350,7 @@ h2 {
   padding: 2rem;
 }
 
-.card-body--white {
+.skills-container .card-body {
   padding-left: 3rem;
 }
 
@@ -518,8 +500,8 @@ h2 {
   color: var(--color-white);
 }
 
-.test {
-  color: #000;
+.btn__icon--rotate {
+  transition: .45s ease-out;
 }
 
 /* jQuery */
@@ -558,14 +540,11 @@ h2 {
 
 .badge--primary {
   background: #ffbd66;
+  color: var(--color-white);
 }
 
 .badge--primary:hover {
   background: #fec274;
-}
-
-.icon--rotate {
-  transition: .45s ease-out;
 }
 
 /* Links */
@@ -708,7 +687,6 @@ h2 {
 }
 
 .v-timeline__content {
-  color: #fff;
   background: linear-gradient(to right, #03256C, #6A097D);
   min-height: 130px;
   padding: 0 0 6rem;
@@ -818,3 +796,8 @@ h2 {
 .text-shadow--primary {
   text-shadow: 3px 3px 5px rgba(0, 0, 0, .2);
 }
+
+/* TODO: Separate block__description from header*/
+/* TODO: Change timeline top margin with different resolutions*/
+/* TODO: Animations on scroll.  */
+/* TODO: Build with Parcel (if possible).  */

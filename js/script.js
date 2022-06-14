@@ -4,7 +4,7 @@ $(document).ready(function() {
   // });
 
   $(".btn--arrow").click(function() {
-    $(".icon--rotate").toggleClass('rotate-90-deg');
+    $(".btn__icon--rotate").toggleClass('rotate-90-deg');
     $(".btn--arrow").toggleClass('rotate-2-deg');
   });
 
