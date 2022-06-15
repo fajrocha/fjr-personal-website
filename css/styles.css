@@ -1,6 +1,6 @@
 :root {
-  --color-white: #FAF3F3;
-  --color-black: #000;
+  --color-primary: #FAF3F3;
+  --color-secondary: #000;
   --color-success: #005941;
 }
 
@@ -35,11 +35,11 @@ h2 {
 /* Font Colors */
 
 .font-color--primary {
-  color: var(--color-white);
+  color: var(--color-primary);
 }
 
 .font-color--secondary {
-  color: var(--color-black);
+  color: var(--color-secondary);
 }
 
 .font-color--success {
@@ -70,22 +70,22 @@ h2 {
   padding-top: 1.5%;
 }
 
-.block--blue {
+.block--secondary {
   /* Chrome 10-25, Safari 5.1-6 */
   background: -webkit-linear-gradient(to right, #00EAD3, #77ACF1, #04009A);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background: linear-gradient(to right, #00EAD3, #77ACF1, #04009A);
 }
 
-.block--blue-dark {
+.block--secondary-dark {
   /* Chrome 10-25, Safari 5.1-6 */
   background: -webkit-linear-gradient(to right, #3d8cf2, #00a4ea, #04009A);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background: linear-gradient(to right, #3d8cf2, #00a4ea, #04009A);
 }
 
-.block--white {
-  background: var(--color-white);
+.block--primary {
+  background: var(--color-primary);
 }
 
 .block--footer {
@@ -187,12 +187,12 @@ h2 {
   }
 }
 
-.block__icons-description {
+.block__description-icons {
   font-size: 4.5rem;
 }
 
 @media (min-width: 576px) {
-  .block__icons-description {
+  .block__description-icons {
     font-size: 5.5rem;
   }
 }
@@ -346,7 +346,7 @@ h2 {
 .card-body {
   font-weight: 500;
   font-size: 1.7rem;
-  color: var(--color-black);
+  color: var(--color-secondary);
   padding: 2rem;
 }
 
@@ -389,14 +389,26 @@ h2 {
 /* Timelines */
 
 .timeline {
-  margin: 1% 0 0;
+  margin: 4% 0 0;
+}
+
+@media (min-width: 768px) {
+  .timeline {
+    margin: 2% 0 0;
+  }
+}
+
+@media (min-width: 992) {
+  .timeline {
+    margin: 1% 0 0;
+  }
 }
 
 .timeline__date {
   font-size: 1.5rem;
   font-weight: 500;
   text-align: center;
-  color: var(--color-white);
+  color: var(--color-primary);
   background: -webkit-linear-gradient(to right, #03256C, #6A097D);
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #03256C, #6A097D);
@@ -404,14 +416,26 @@ h2 {
   margin: 0;
   padding: 6%;
   border-radius: 100%;
-  border: 2px solid var(--color-white);
+  border: 2px solid var(--color-primary);
   transition: transform 0.2s ease-out;
   z-index: 1;
+}
+
+@media (min-width: 576px) {
+  .timeline__date {
+    padding: 3%;
+  }
 }
 
 @media (min-width: 768px) {
   .timeline__date {
     font-size: 1.8rem;
+    padding: 2%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .timeline__date {
     padding: 1%;
   }
 }
@@ -427,7 +451,7 @@ h2 {
   font-size: 0;
   color: transparent;
   height: 2px;
-  background: var(--color-white);
+  background: var(--color-primary);
   position: relative;
 }
 
@@ -439,7 +463,7 @@ h2 {
   height: 4rem;
   width: .2rem;
   padding: 0;
-  border-right: dotted .2rem var(--color-white);
+  border-right: dotted .2rem var(--color-primary);
   background: #618CC5;
 }
 
@@ -487,7 +511,7 @@ h2 {
 }
 
 .btn--primary {
-  color: var(--color-white);
+  color: var(--color-primary);
   background: #74d2a6;
   padding: .7rem 10%;
 }
@@ -497,7 +521,7 @@ h2 {
 }
 
 .btn--primary:hover {
-  color: var(--color-white);
+  color: var(--color-primary);
 }
 
 .btn__icon--rotate {
@@ -540,7 +564,7 @@ h2 {
 
 .badge--primary {
   background: #ffbd66;
-  color: var(--color-white);
+  color: var(--color-primary);
 }
 
 .badge--primary:hover {
@@ -553,12 +577,12 @@ h2 {
   opacity: .8;
 }
 
-.links--white {
-  color: var(--color-white);
+.links--primary {
+  color: var(--color-primary);
 }
 
-.links--white:hover {
-  color: var(--color-white);
+.links--primary:hover {
+  color: var(--color-primary);
 }
 
 .links--success {
@@ -797,7 +821,5 @@ h2 {
   text-shadow: 3px 3px 5px rgba(0, 0, 0, .2);
 }
 
-/* TODO: Separate block__description from header*/
-/* TODO: Change timeline top margin with different resolutions*/
 /* TODO: Animations on scroll.  */
 /* TODO: Build with Parcel (if possible).  */

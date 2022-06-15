@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <!-- Font Awesome -->
     <link rel="stylesheet" href="assets/css/all.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Bootstrap Scripts-->
     <script
@@ -37,17 +38,19 @@
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
     ></script>
+    <!-- jQuery -->
     <script
       src="https://code.jquery.com/jquery-3.6.0.js"
       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
       crossorigin="anonymous"
     ></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <!-- JavaScript -->
     <script src="js/script.js"></script>
   </head>
 
   <body>
-    <section class="block block--blue block--intro" id="presentation">
+    <section class="block block--secondary block--intro" id="presentation">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-dark">
           <button
@@ -76,7 +79,7 @@
           </div>
         </nav>
         <header class="block__header font-color--primary">
-          <picture>
+          <picture data-aos="zoom-in" data-aos-duration="2000">
             <source
               type="image/webp"
               srcset="images/my-photo.webp"
@@ -91,47 +94,49 @@
               alt="A picture of me"
             />
           </picture>
-          <h1 class="block__heading">I'm Fábio</h1>
-          <div class="block__description text-shadow--primary">
-            <p>
-              A mechanical engineer who found out during university
-              that programming is my passion.
-            </p>
-            <p>
-              From there I took any programming related subject I could
-              pick, delving into PLCs, robotics, computer vision,
-              microcontrollers and later to high level languages like C.
-              During my master's I explored front-end as well, mainly
-              HTML5, CSS3 and the Vue.Js framework.
-            </p>
-            <p>
-              After university I realized I lacked a lot of knowledge
-              not only of more recent programming languages (C#, Python)
-              but also of good software design practices and even some
-              basic CS concepts like OOP, data structures or the big O
-              notation.
-            </p>
-            <p class="p__last">
-              Thus, for the past months I have been educating myself on
-              these matters, as well as methodologies like Agile and
-              DevOps.
-            </p>
-            </div>
-          </div>
+          <h1 class="block__heading" data-aos="zoom-in" data-aos-duration="1000">
+            I'm Fábio
+          </h1>
         </header>
+        <div class="block__description font-color--primary text-shadow--primary" data-aos="fade-up" data-aos-duration="1000">
+          <p>
+            A mechanical engineer who found out during university
+            that programming is my passion.
+          </p>
+          <p>
+            From there I took any programming related subject I could
+            pick, delving into PLCs, robotics, computer vision,
+            microcontrollers and later to high level languages like C.
+            During my master's I explored front-end as well, mainly
+            HTML5, CSS3 and the Vue.Js framework.
+          </p>
+          <p>
+            After university I realized I lacked a lot of knowledge
+            not only of more recent programming languages (C#, Python)
+            but also of good software design practices and even some
+            basic CS concepts like OOP, data structures or the big O
+            notation.
+          </p>
+          <p class="p__last">
+            Thus, for the past months I have been educating myself on
+            these matters, as well as methodologies like Agile and
+            DevOps.
+          </p>
+          </div>
+        </div>
       </div>
     </section>
-    <section class="block block--white" id="skills">
+    <section class="block block--primary" id="skills">
       <header class="block__header font-color--secondary mb-3">
           <div class="d-flex justify-content-center align-items-center">
             <span class="block__heading-icons fas fa-brain"></span>
             <h1 class="block__heading">Skills</h1>
           </div>
-          <div class="block__description">
-            <p>Along my academic and professional experience I have used the following languages & software:</p>
-          </div>
       </header>
-      <div class="skills-container container-fluid">
+      <div class="block__description font-color--secondary">
+        <p>Along my academic and professional experience I have used the following languages & software:</p>
+      </div>
+      <div class="skills-container container-fluid" data-aos="fade-up">
         <div class="row">
           <!-- Frontend -->
           <div class="col col-xl-3 col-lg-6 col-md-6 col-12 mb-3">
@@ -211,7 +216,7 @@
         </div>
       </div>
     </section>
-    <section class="block block--blue-dark" id="career">
+    <section class="block block--secondary-dark" id="career">
       <header class="block__header font-color--primary">
         <div class="d-flex justify-content-center align-items-center">
           <span class="block__heading-icons fas fa-user-tie"></span>
@@ -336,9 +341,9 @@
             <div class="collapse block__description font-color--primary" id="collapse--mesa">
               <p>MESA Ceramics is a young ceramics company founded in 2017 focused on stoneware tableware articles.</p>
               <p>I was hired to be the lead robotics engineer of made in Germany robotized isostatic pressing machines 
-              (<a class="links links--white" href="https://www.dorst.de/en/pht200-with-fettling-robot-rpt.html">PHT200</a>)
+              (<a class="links links--primary" href="https://www.dorst.de/en/pht200-with-fettling-robot-rpt.html">PHT200</a>)
               and a high pressure casting machine 
-              (<a class="links links--white" href="https://www.dorst.de/en/pht200-with-fettling-robot-rpt.html">DGM120</a>) by DORST Technologies.</p>
+              (<a class="links links--primary" href="https://www.dorst.de/en/pht200-with-fettling-robot-rpt.html">DGM120</a>) by DORST Technologies.</p>
               <p>In this position I was responsible for the diagnostics, troubleshooting and teaching of the robots (ABB) ensuring the 
                 production line's OEE as well as the quality of the product (fettling, finishing, integral structure of the article).
               </p>
@@ -550,14 +555,14 @@
       </div>
     </section>
     <!-- EDUCATION SECTION -->
-    <section class="block block--white block__background" id="education">
+    <section class="block block--primary block__background" id="education">
       <header class="block__header font-color--secondary">
         <div class="d-flex justify-content-center align-items-center">
           <span class="block__heading-icons fas fa-graduation-cap"></span>
           <h1 class="block__heading">Education</h1>
         </div>
       </header>
-      <div class="block__description font-color--success text-shadow--primary">
+      <div class="block__description font-color--success text-shadow--primary" data-aos="fade-up">
         <a href="https://www.ua.pt/" target="_blank">
           <picture>
             <source
@@ -587,7 +592,7 @@
         <p>Graduated <a class="links links--success" href="https://uapt33090-my.sharepoint.com/:f:/g/personal/fabio_jr_ua_pt/Eon4ITldxN1EtiF2tb9kgSUBX0pBO7Bo3w-oOmslxJSRkA?e=Z21fVx">Cum Laude</a>.</p>
       </div>
     </section>
-    <section class="block block--white" id="learning-path">
+    <section class="block block--primary" id="learning-path">
       <header class="block__header font-color--secondary">
         <div class="d-flex justify-content-center align-items-center">
           <h2>And from there?</h2>
@@ -719,7 +724,7 @@
       </div>
     </section>
     <!-- CONTACT ME SECTION -->
-    <section class="block block--blue" id="contactme">
+    <section class="block block--secondary" id="contactme">
       <header class="block__header font-color--primary">
         <div class="d-flex justify-content-center align-items-center">
           <span class="block__heading-icons fas fa-comments"></span>
@@ -729,25 +734,25 @@
       <div class="container-fluid block__description">
         <div class="row">
           <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-4">
-            <a class="links links--white" href="https://www.linkedin.com/in/fjr09">
-              <span class="fab fa-linkedin block__icons-description"></span>
+            <a class="links links--primary" href="https://www.linkedin.com/in/fjr09">
+              <span class="fab fa-linkedin block__description-icons"></span>
             </a>           
           </div>
           <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-4">
-            <a class="links links--white" href="mailto:fjrocha9@gmail.com">
-              <span class="fas fa-envelope block__icons-description"></span>
+            <a class="links links--primary" href="mailto:fjrocha9@gmail.com">
+              <span class="fas fa-envelope block__description-icons"></span>
             </a>
           </div>
           <div class="col-lg-4 col-md-4">
-            <a class="links links--white" href="https://wa.me/351917559858">
-              <span class="fab fa-whatsapp block__icons-description"></span>
+            <a class="links links--primary" href="https://wa.me/351917559858">
+              <span class="fab fa-whatsapp block__description-icons"></span>
             </a>
           </div>
         </div>
       </div>
     </section>
     <!-- FOOTER -->
-    <footer class="block block--blue block--footer" id="footer">
+    <footer class="block block--secondary block--footer" id="footer">
       <div class="block__description font-color--secondary">
         <div class="d-flex justify-content-center align-items-center">
           <p class="p__last me-2">hosted on</p>
@@ -766,5 +771,9 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
