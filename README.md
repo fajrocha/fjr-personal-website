@@ -1,3 +1,3 @@
 # fjrpersonalwebsite
 
-My (pretty simple) personal website developed with Bootstrap 4, CSS3 and jQuery.
+My (pretty simple) personal website developed with HTML5, CSS3, Bootstrap 5, jQuery and the AOS (Animate On Scroll) library.

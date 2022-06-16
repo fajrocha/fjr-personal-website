@@ -284,14 +284,14 @@
               </p>
               <p>
                 Due to my deep interest on the matter of I4.0, I accepted an offer to be part of this team. In it I have been collaborating with
-                Continental Mabor Tires (Lousado) on a massive project to bring their in house devoloped Machine-IT middleware, which connects
+                Continental Mabor Tires (Lousado) on a massive project to integrate and deploy their in house devoloped Machine - IT middleware, which connects
                 the machines to Conti's proprietary MES Suite (which handles OEE calculation, downtime tracking and recipe management) through 
                 a standardized interface for all machines. 
               </p>
               <p class="p__last">
-                This standard middleware is capable of generating standard alarms, losses and product flagging, managing machine interlock
-                deriving from material validation accoriding to the respective manufacturing order, quantifying material consumption and 
-                production counters and ensuring the correct implementation of normalized recipe parameters that come from the MES Suite. 
+                This standard middleware is capable of generating standard alarms, losses and product flagging, managing machine interlocks
+                deriving from material validation according to the respective manufacturing order, quantifying material consumption and 
+                production counts and ensuring the correct implementation of normalized recipe parameters that come from the MES Suite. 
               </p>
             </div>
           </div>
@@ -349,7 +349,7 @@
               <p>In this position I was responsible for the diagnostics, troubleshooting and teaching of the robots (ABB) ensuring the 
                 production line's OEE as well as the quality of the product (fettling, finishing, integral structure of the article).
               </p>
-              <p class="p__last">This was also a great learning opportunity since I was in close contact with the Dorst engineers (robotics, mechanical), 
+              <p class="p__last">This was also a great learning opportunity since I was in close contact with Dorst's engineers (robotics, mechanical), 
                 practicing English on a daily basis, cooperating and coordinating the activities like the implementaton of new products and the
                 optimization of cycle times.
               </p>
@@ -406,21 +406,21 @@
                 OLI bath solutions brand, making it my first contact with a huge corporation.
               </p>
               <p>
-                This is where I developed my Master's thesis, whose main objective was to automatically update the counters of manufacturing orders 
+                This is where I developed my Master's thesis, whose main objective was to automatically update the production counts of manufacturing orders 
                 of three assembly lines through an IoT solution that followed Industry 4.0 principles. This solution also dealt 
                 with validation of the current order.
               </p>
               <p> 
                 A proof of concept of the solution was developed, with the stack starting with the existing PLC and Robot devices on the bottom. 
                 On top of it, I developed an algorithm on a custom edge device built by me (whose processing unit was an ESP32 microcontroller) that would 
-                interpret data from the existing PROFIBUS network, which would detect the end of the processing of a pallet and send this 
+                interpret data from the existing PROFIBUS network and detect the when a pallet was processed (ready for shipping) and send this 
                 information to a RPi 3B+ via the company's network (using MQTT).
               </p>
               <p class="p__last">
-                A MES like system was developed using Node-Red that would update these counts of the Company's Test Database, 
-                which had an exact copy of existing manufacturing orders. The MES would know the exact quantities of each pallet and what order 
+                A MES like system was developed using Node-Red that would update production counts at the Test Database, 
+                which had an exact copy of existing manufacturing orders. The MES would know the exact quantities of cisterns on each pallet and what order 
                 to update through the validation of the orders at the beggining of the manufacturing processes, when a barcode would be scanned.
-                Additionally, a Web UI and Dashboard was developed using Bootstrap Vue and Vue.Js to display production information: counters, 
+                Additionally, a Web UI and Dashboard was developed using Bootstrap Vue and Vue.Js to display production information: production counts, 
                 which order was running, if validation failed, among others. It also had control capabilities, like changing the amount of units 
                 per pallet on the running orders (to account for an existing edge case).
               </p>
@@ -477,10 +477,10 @@
               </p>
               <p> 
                 This time I helped on the development of another solution for the automotive industry by programming a RS232 communication 
-                between a PLC and a magnetizer/demagnetizer to control and monitor (max) voltage, power and amperage. 
+                between a PLC and a magnetizer/demagnetizer to control and monitor voltage, power and amperage. 
               </p>
               <p class="p__last"> 
-                On this solution I also did teaching and configured on KUKA robots, being my first contact with robotics on an industrial 
+                On this solution I also did teaching and configured KUKA robots, being my first contact with robotics on an industrial 
                 environment.
               </p>
             </div>
@@ -606,13 +606,13 @@
           fully comprehend. Also, a lot of CS concepts like data structures, algorithms and methodologies like Agile and DevOps were foreign to me.
         </p>
         <p>
-          I have been learning from different sources, either documentation or online courses, with the latter posing a challenge. 
+          I have been learning from different sources: books, documentation and online courses, with the latter posing a challenge. 
         </p>
         <p>
           On one hand the quality of the course is highly dependant on the instructor, since it's one thing to know the intricancies of a programming
           language, but it's another to know good software engineering and design practices and how to translate them to the code. 
-          Secondly, when learning online it's important to never consume the content blindly, instead the aim should always be to question and understand 
-          each line of code.
+          Secondly, when learning online it's important to never consume the content blindly, instead the aim should always be to challenge yourself 
+          and question and understand each line of code.
         </p> 
         <p class="p__last">
           Below has been my path to learn the gaps I strive to fill on these matters.
@@ -648,7 +648,7 @@
                       <h3 class="v-timeline__title">Version Control: Git</h3>
                       <div class="v-timeline__description">
                         <p>
-                          Despite having already used Git, I learnt the matter more deeply, especially the CLI commands .
+                          Despite having already used Git, I learnt the matter more deeply, especially the various CLI commands .
                         </p>
                         <p>
                           <span class="v-timeline__strong">Concepts learned:</span> Remote and Local repositories, SSH Keys,
