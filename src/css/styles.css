@@ -603,7 +603,11 @@ h2 {
 /* Collapse */
 
 .collapsing {
-  transition: .4s linear;
+  transition: .8s ease;
+}
+
+.navbar .collapsing {
+  transition: .4s ease;
 }
 
 /* Vertical Timeline */
