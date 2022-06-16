@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+      charset="utf-8"
+    />
+    <title>Fábio's Personal Website</title>
+    <link rel="icon" href="images/fjr-icon.png" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;900&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--CSS Stylesheets-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/css/all.css">
+    <!-- SCSS -->
+    <link rel="stylesheet" href="sass/main.scss">
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+
+    <!-- Bootstrap Scripts-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+  </head>
+
+  <body>
+    <section class="block block--secondary block--intro" id="presentation">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <button
+            class="navbar-toggler ms-auto"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#career">Career</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#education">Education</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contactme">Contact me!</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <header class="block__header font-color--primary">
+          <picture data-aos="zoom-in" data-aos-duration="2000">
+            <source
+              type="image/webp"
+              srcset="images/my-photo.webp"
+            />
+            <source
+              type="image/jpg"
+              srcset="images/my-photo.jpg"
+            />
+            <img
+              class="block__photo img-fluid box-shadow--primary"
+              src="images/my-photo.jpg"
+              alt="A picture of me"
+            />
+          </picture>
+          <h1 data-aos="zoom-in" data-aos-duration="1000" class="block__heading" >
+            I'm Fábio
+          </h1>
+        </header>
+        <div data-aos="fade-up" data-aos-duration="1000" class="block__description font-color--primary text-shadow--primary" >
+          <p>
+            A mechanical engineer who found out during university
+            that programming is my passion.
+          </p>
+          <p>
+            From there I took any programming related subject I could
+            pick, delving into PLCs, robotics, computer vision,
+            microcontrollers and later to high level languages like C.
+            During my master's I explored front-end as well, mainly
+            HTML5, CSS3 and the Vue.Js framework.
+          </p>
+          <p>
+            After university I realized I lacked a lot of knowledge
+            not only of more recent programming languages (C#, Python)
+            but also of good software design practices and even some
+            basic CS concepts like OOP, data structures or the big O
+            notation.
+          </p>
+          <p class="p__last">
+            Thus, for the past months I have been educating myself on
+            these matters, as well as methodologies like Agile and
+            DevOps.
+          </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="block block--primary" id="skills">
+      <header class="block__header font-color--secondary mb-3">
+          <div class="d-flex justify-content-center align-items-center">
+            <span class="block__heading-icons fas fa-brain"></span>
+            <h1 class="block__heading">Skills</h1>
+          </div>
+      </header>
+      <div class="block__description font-color--secondary">
+        <p>Along my academic and professional experience I have used the following languages & software:</p>
+      </div>
+      <div class="skills-container container-fluid">
+        <div class="row">
+          <!-- Frontend -->
+          <div class="col col-xl-3 col-lg-6 col-md-6 col-12 mb-3">
+            <div data-aos="fade-up" class="card card--skills box-shadow--primary text-white">
+              <div class="card-header card-header--primary">Frontend</div>
+              <div class="card-body">
+                <div class="list list--icon">
+                  <div class="d-flex justify-content-lg-start justify-content-center align-items-center list__item">
+                    <img src="images/html5-icon.svg" alt="" class="list__icon"><span class="">HTML5</span>
+                  </div>
+                  <div class="d-flex justify-content-lg-start justify-content-center align-items-center list__item">
+                    <img src="images/css3-icon.svg" alt="" class="list__icon"><span class="">CSS3</span>
+                  </div>
+                  <div class="d-flex justify-content-lg-start justify-content-center align-items-center list__item">
+                    <img src="images/bootstrap-5.svg" alt="" class="list__icon"><span class="">Bootstrap 5</span>
+                  </div>
+                  <div class="d-flex justify-content-lg-start justify-content-center align-items-center list__item">
+                    <img src="images/vue-icon.svg" alt="" class="list__icon"><span class="">Vue.JS</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Backend -->
+          <div class="col col-xl-3 col-lg-6 col-md-6 col-12 mb-3">
+            <div data-aos="fade-up" class="card card--skills box-shadow--primary text-white">
+              <div class="card-header card-header--primary">Backend</div>
+              <div class="card-body">
+                <div class="list list--icon">
+                  <div class="d-flex justify-content-lg-start justify-content-center align-items-center list__item">
+                    <img src="images/c-icon.svg" alt="" class="list__icon"><span class="">C</span>
+                  </div>
+                  <div class="d-flex justify-content-lg-start justify-content-center align-items-center list__item">
+                    <img src="images/csharp-icon.svg" alt="" class="list__icon"><span class="">C#</span>
+                  </div>
+                  <div class="d-flex justify-content-lg-start justify-content-center align-items-center list__item">
+                    <img src="images/python-svg.svg" alt="" class="list__icon"><span class="">Python</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col col-xl-3 col-lg-6 col-md-6 col-12 mb-3">
+            <div data-aos="fade-up" class="card card--skills box-shadow--primary text-white">
+              <div class="card-header card-header--primary">Version Control</div>
+              <div class="card-body">
+                <div class="list list--icon">
+                  <div class="d-flex justify-content-lg-start justify-content-center align-items-center list__item">
+                    <img src="images/git-icon.svg" alt="" class="list__icon"><span class="">GIT</span>
+                  </div>
+                  <div class="d-flex justify-content-lg-start justify-content-center align-items-center list__item">
+                    <img src="images/svn-icon.svg" alt="" class="list__icon"><span class="">Apache SVN</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Automation Tools -->
+          <div class="col col-xl-3 col-lg-6 col-md-6 col-12 mb-3">
+            <div data-aos="fade-up" class="card card--skills box-shadow--primary text-white">
+              <div class="card-header card-header--primary">Controls SW</div>
+              <div class="card-body">
+                <div class="list list--icon">
+                  <div class="d-flex justify-content-lg-start justify-content-center align-items-center list__item">
+                    <img src="images/tia-icon.webp" alt="" class="list__icon"><span class="">Siemens TIA Portal</span>
+                  </div>
+                  <div class="d-flex justify-content-lg-start justify-content-center align-items-center list__item">
+                    <img src="images/twinc2-icon.png" alt="" class="list__icon"><span class="">TwinCat 2</span>
+                  </div>
+                  <div class="d-flex justify-content-lg-start justify-content-center align-items-center list__item">
+                    <img src="images/robotstudio-icon.png" alt="" class="list__icon"><span class="">ABB RobotStudio</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="block block--secondary-dark" id="career">
+      <header class="block__header font-color--primary">
+        <div class="d-flex justify-content-center align-items-center">
+          <span class="block__heading-icons fas fa-user-tie"></span>
+          <h1 class="block__heading">Career</h1>
+        </div>
+      </header>
+      <div data-aos="fade-left" data-aos-duration="1000" id="carousel--career" class="carousel slide" data-interval = false keyboard = false>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-center align-items-center timeline">
+              <span class="timeline__line timeline__line--hidden"></span>
+              <span class="timeline__date box-shadow--primary text-shadow--primary">Oct. 2021 - <br>Present</span>
+              <span class="timeline__line box-shadow--primary"></span>
+            </div>
+            <div class="container-fluid timeline__dotted-line box-shadow--primary"></div>
+            <div class="container-fluid timeline__milestone">
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="card text-white box-shadow--primary mb-4">
+                  <div class="card-header card-header--secondary">
+                    <a href="https://conti-engineering.com/" target="_blank">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          srcset="images/ces-logo.webp"
+                        />
+                        <source
+                          type="image/png"
+                          srcset="images/ces-logo.png"
+                        />
+                        <img class="timeline__milestone-icon img-fluid" src="images/ces-logo.png" alt="Continental Engineering Services logo.">
+                      </picture>
+                    </a>
+                  </div>
+                  <div class="card-body card-body--grey">
+                    <div class="d-flex justify-content-center align-items-center mb-2">
+                      <div class="badge badge--primary text-shadow--primary shadow--primary">
+                        I4.0 Software Engineer
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                      <button 
+                        class="btn btn--primary btn--rotated btn--arrow text-shadow--primary shadow--primary" 
+                        type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse--ces" 
+                        aria-expanded="false" 
+                        aria-controls="collapse">
+                        Learn More <i class="btn__icon--rotate far fa-arrow-alt-circle-right"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="collapse block__description font-color--primary text-shadow--primary" id="collapse--ces">
+              <p>
+                Continental Engineering Services (CES) is a subsidiary of Continental AG, producer of tires and automotive parts. In general, 
+                CES focuses on developing software for the automotive industry, like ADAS (Advanced Driver Systems), driveline, electrification,
+                brakes, HMI (infotainment systems) as well as systems to monitor the interior of the car.  
+              </p>
+              <p>
+                In the recently opened office in Porto (2019), a team was formed to tackle Industry 4.0 (I4.0) and to bring the digitalization of the 
+                industry to life based on Continental Tire's in house experience on the matter and to comercialize solutions that would enable this.
+              </p>
+              <p>
+                Due to my deep interest on the matter of I4.0, I accepted an offer to be part of this team. In it I have been collaborating with
+                Continental Mabor Tires (Lousado) on a massive project to bring their in house devoloped Machine-IT middleware, which connects
+                the machines to Conti's proprietary MES Suite (which handles OEE calculation, downtime tracking and recipe management) through 
+                a standardized interface for all machines. 
+              </p>
+              <p class="p__last">
+                This standard middleware is capable of generating standard alarms, losses and product flagging, managing machine interlock
+                deriving from material validation accoriding to the respective manufacturing order, quantifying material consumption and 
+                production counters and ensuring the correct implementation of normalized recipe parameters that come from the MES Suite. 
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center align-items-center timeline">
+              <span class="timeline__line box-shadow--primary"></span>
+              <span class="timeline__date box-shadow--primary text-shadow--primary">Jan. 2021 - <br>Sep. 2021</span>
+              <span class="timeline__line box-shadow--primary"></span>
+            </div>
+            <div class="container timeline__dotted-line box-shadow--primary"></div>
+            <div class="container-fluid timeline__milestone">
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="card text-white box-shadow--primary mb-4">
+                  <div class="card-header card-header--secondary">
+                    <a href="https://www.mesa-ceramics.com/">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          srcset="images/mesa-logo.webp"
+                        />
+                        <source
+                          type="image/png"
+                          srcset="images/mesa-logo.png"
+                        />
+                        <img class="timeline__milestone-icon" src="images/mesa-logo.png" alt="Mesa Ceramics logo.">
+                      </picture>
+                    </a>
+                  </div>
+                  <div class="card-body card-body--grey">
+                    <div class="d-flex justify-content-center align-items-center mb-2">
+                      <div class="badge badge--primary text-shadow--primary shadow--primary">
+                        Robotics Engineer
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                      <button 
+                        class="btn btn--primary btn--rotated btn--arrow text-shadow--primary shadow--primary" 
+                        type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse--mesa" 
+                        aria-expanded="false" 
+                        aria-controls="collapse">
+                        Learn More <i class="btn__icon--rotate far fa-arrow-alt-circle-right"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="collapse block__description font-color--primary" id="collapse--mesa">
+              <p>MESA Ceramics is a young ceramics company founded in 2017 focused on stoneware tableware articles.</p>
+              <p>I was hired to be the lead robotics engineer of made in Germany robotized isostatic pressing machines 
+              (<a class="links links--primary" href="https://www.dorst.de/en/pht200-with-fettling-robot-rpt.html">PHT200</a>)
+              and a high pressure casting machine 
+              (<a class="links links--primary" href="https://www.dorst.de/en/pht200-with-fettling-robot-rpt.html">DGM120</a>) by DORST Technologies.</p>
+              <p>In this position I was responsible for the diagnostics, troubleshooting and teaching of the robots (ABB) ensuring the 
+                production line's OEE as well as the quality of the product (fettling, finishing, integral structure of the article).
+              </p>
+              <p class="p__last">This was also a great learning opportunity since I was in close contact with the Dorst engineers (robotics, mechanical), 
+                practicing English on a daily basis, cooperating and coordinating the activities like the implementaton of new products and the
+                optimization of cycle times.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center align-items-center timeline">
+              <span class="timeline__line box-shadow--primary"></span>
+              <span class="timeline__date box-shadow--primary text-shadow--primary">Feb. 2020 - <br>Jul. 2020</span>
+              <span class="timeline__line box-shadow--primary"></span>
+            </div>
+            <div class="container timeline__dotted-line box-shadow--primary"></div>
+            <div class="container-fluid timeline__milestone">
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="card text-white box-shadow--primary mb-4">
+                  <div class="card-header card-header--secondary">
+                    <a href="https://www.oli-world.com/pt/" target="_blank">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          srcset="images/oli-logo.webp"
+                        />
+                        <source
+                          type="image/png"
+                          srcset="images/oli-logo.png"
+                        />
+                        <img class="timeline__milestone-icon" src="images/oli-logo.png" alt="OLI's logo.">
+                      </picture>
+                    </a>
+                  </div>
+                  <div class="card-body card-body--grey">
+                    <div class="d-flex justify-content-center align-items-center mb-2">
+                      <div class="badge badge--primary text-shadow--primary shadow--primary">
+                        Automation Engineer Intern
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                      <button 
+                        class="btn btn--primary btn--rotated btn--arrow text-shadow--primary shadow--primary" 
+                        type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse--oli" 
+                        aria-expanded="false" 
+                        aria-controls="collapse">
+                        Learn More <i class="btn__icon--rotate far fa-arrow-alt-circle-right"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="collapse block__description font-color--primary" id="collapse--oli">
+              <p>
+                OLI Sistemas Sanitários S.A. is a portuguese multinational and the largest cistern producer in Southern Europe, owning the 
+                OLI bath solutions brand, making it my first contact with a huge corporation.
+              </p>
+              <p>
+                This is where I developed my Master's thesis, whose main objective was to automatically update the counters of manufacturing orders 
+                of three assembly lines through an IoT solution that followed Industry 4.0 principles. This solution also dealt 
+                with validation of the current order.
+              </p>
+              <p> 
+                A proof of concept of the solution was developed, with the stack starting with the existing PLC and Robot devices on the bottom. 
+                On top of it, I developed an algorithm on a custom edge device built by me (whose processing unit was an ESP32 microcontroller) that would 
+                interpret data from the existing PROFIBUS network, which would detect the end of the processing of a pallet and send this 
+                information to a RPi 3B+ via the company's network (using MQTT).
+              </p>
+              <p class="p__last">
+                A MES like system was developed using Node-Red that would update these counts of the Company's Test Database, 
+                which had an exact copy of existing manufacturing orders. The MES would know the exact quantities of each pallet and what order 
+                to update through the validation of the orders at the beggining of the manufacturing processes, when a barcode would be scanned.
+                Additionally, a Web UI and Dashboard was developed using Bootstrap Vue and Vue.Js to display production information: counters, 
+                which order was running, if validation failed, among others. It also had control capabilities, like changing the amount of units 
+                per pallet on the running orders (to account for an existing edge case).
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center align-items-center timeline">
+              <span class="timeline__line box-shadow--primary"></span>
+              <span class="timeline__date box-shadow--primary text-shadow--primary">Jul. 2019 - <br>Aug. 2019</span>
+              <span class="timeline__line box-shadow--primary"></span>
+            </div>
+            <div class="container timeline__dotted-line box-shadow--primary"></div>
+            <div class="container-fluid timeline__milestone">
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="card text-white box-shadow--primary mb-4">
+                  <div class="card-header card-header--secondary">
+                    <a href="http://atena-ai.pt/">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          srcset="images/atena-logo.webp"
+                        />
+                        <source
+                          type="image/png"
+                          srcset="images/atena-logo.png"
+                        />
+                        <img class="timeline__milestone-icon img-fluid" src="images/atena-logo.png" alt="Atena's logo.">
+                      </picture>
+                    </a>
+                  </div>
+                  <div class="card-body card-body--grey">
+                    <div class="d-flex justify-content-center align-items-center mb-2">
+                      <div class="badge badge--primary text-shadow--primary shadow--primary">
+                        Automation Summer Intern
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                      <button 
+                        class="btn btn--primary btn--rotated btn--arrow text-shadow--primary shadow--primary" 
+                        type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse--atena-1" 
+                        aria-expanded="false" 
+                        aria-controls="collapse">
+                        Learn More <i class="btn__icon--rotate far fa-arrow-alt-circle-right"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="collapse block__description font-color--primary" id="collapse--atena-1">
+              <p>
+                Following my successful previous internship I came back the following summer.
+              </p>
+              <p> 
+                This time I helped on the development of another solution for the automotive industry by programming a RS232 communication 
+                between a PLC and a magnetizer/demagnetizer to control and monitor (max) voltage, power and amperage. 
+              </p>
+              <p class="p__last"> 
+                On this solution I also did teaching and configured on KUKA robots, being my first contact with robotics on an industrial 
+                environment.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center align-items-center timeline">
+              <span class="timeline__line box-shadow--primary"></span>
+              <span class="timeline__date box-shadow--primary text-shadow--primary">Jul. 2018 - <br>Aug. 2018</span>
+              <span class="timeline__line timeline__line--hidden"></span>
+            </div>
+            <div class="container timeline__dotted-line box-shadow--primary"></div>
+            <div class="container-fluid timeline__milestone">
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="card text-white box-shadow--primary mb-4">
+                  <div class="card-header card-header--secondary">
+                    <a href="http://atena-ai.pt/" target="_blank">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          srcset="images/atena-logo.webp"
+                        />
+                        <source
+                          type="image/png"
+                          srcset="images/atena-logo.png"
+                        />
+                        <img class="timeline__milestone-icon img-fluid" src="images/atena-logo.png" alt="Atena's logo.">
+                      </picture>
+                    </a>
+                  </div>
+                  <div class="card-body card-body--grey">
+                    <div class="d-flex justify-content-center align-items-center mb-2">
+                      <div class="badge badge--primary text-shadow--primary shadow--primary">
+                        Automation Summer Intern
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                      <button 
+                        class="btn btn--primary btn--rotated btn--arrow text-shadow--primary shadow--primary" 
+                        type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapse--atena-2" 
+                        aria-expanded="false" 
+                        aria-controls="collapse">
+                        Learn More <i class="btn__icon--rotate far fa-arrow-alt-circle-right"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="collapse block__description font-color--primary" id="collapse--atena-2">
+              <p>
+                Atena is a company specialized in developing and integrating machinery and production systems with over 2 decades
+                of experience.
+              </p>
+              <p>
+                This summer internship, which lasted 7 weeks, was my first contact with the job market.
+              </p>
+              <p class="p__last">
+                In it I helped developing real production systems for the automotive industry
+                by programming PLCs (Siemens TIA Portal) as well as designing electrical schematics (using EPLAN),
+                making it very worthwhile for me professionally.
+              </p>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel--career" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel--career" data-bs-slide="next">
+            <span class="test carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- EDUCATION SECTION -->
+    <section class="block block--primary block__background" id="education">
+      <header class="block__header font-color--secondary">
+        <div class="d-flex justify-content-center align-items-center">
+          <span class="block__heading-icons fas fa-graduation-cap"></span>
+          <h1 class="block__heading">Education</h1>
+        </div>
+      </header>
+      <div data-aos="fade-up" class="block__description font-color--success text-shadow--primary">
+        <a href="https://www.ua.pt/" target="_blank">
+          <picture>
+            <source
+              type="image/webp"
+              srcset="images/ua-logo.webp"
+            />
+            <source
+              type="image/png"
+              srcset="images/ua-logo.png"
+            />
+            <img class="timeline__milestone-icon mb-3" src="images/ua-logo.png" alt="University of Aveiro logo.">
+          </picture>
+        </a>
+        <p>
+          In University of Aveiro I got my Master's in Mechanical Engineering.
+        </p>
+        <p>
+          Going in I assumed I would be a CAD Engineer, focusing on mechanical project and structural analysis, however the first time I 
+          touched programing (on a PLC!) I fell in love with programming. From there I also learnt about industrial robotics, machine vision, 
+          microcontrollers and dabbled in the very basics of web languages and relational databases (MySQL)
+        </p>
+        <p>
+          Additionally I had some subjects where I learnt Visual Basic and C, this last one coupled with Linux which
+          introduced me to the CLI and how powerful and useful it can be. Control version with Git was also introduced to me during this time.
+          Combining all this knowledge - (My)SQL, C, PLCs, Web Languages and Git - allowed me to develop my Master's Thesis project at OLI.
+        </p>
+        <p>Graduated <a class="links links--success" href="https://uapt33090-my.sharepoint.com/:f:/g/personal/fabio_jr_ua_pt/Eon4ITldxN1EtiF2tb9kgSUBX0pBO7Bo3w-oOmslxJSRkA?e=Z21fVx">Cum Laude</a>.</p>
+      </div>
+    </section>
+    <section class="block block--primary" id="learning-path">
+      <header data-aos="zoom-in" class="block__header font-color--secondary" >
+        <div class="d-flex justify-content-center align-items-center">
+          <h2>And from there?</h2>
+        </div>
+      </header>
+      <div data-aos="zoom-in" class="block__description font-color--secondary text-shadow--primary">
+        <p>
+          After university I realized I still had a lot to learn. I had no contact with OOP languages and even what the concept means I did not
+          fully comprehend. Also, a lot of CS concepts like data structures, algorithms and methodologies like Agile and DevOps were foreign to me.
+        </p>
+        <p>
+          I have been learning from different sources, either documentation or online courses, with the latter posing a challenge. 
+        </p>
+        <p>
+          On one hand the quality of the course is highly dependant on the instructor, since it's one thing to know the intricancies of a programming
+          language, but it's another to know good software engineering and design practices and how to translate them to the code. 
+          Secondly, when learning online it's important to never consume the content blindly, instead the aim should always be to question and understand 
+          each line of code.
+        </p> 
+        <p class="p__last">
+          Below has been my path to learn the gaps I strive to fill on these matters.
+        </p>
+      </div>
+      <div class="container-fluid v-timeline-container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="v-timeline">
+                  <div class="v-timeline__segm v-timeline__segm--first">
+                    <div data-aos="fade--left-right" class="v-timeline__content font-color--primary">
+                      <h3 class="v-timeline__title">HTML5 & CSS3</h3>
+                      <div class="v-timeline__icon">
+                        <i class="fa-solid fa-globe"></i>
+                      </div>
+                      <div class="v-timeline__description">
+                        <p>
+                          The basics of HTML5 and CSS3 I already had, however I still did a full course to fill in any gaps.
+                        </p>
+                        <p>
+                          <span class="v-timeline__strong">New concepts learned:</span> Flexbox, CSS Sprites, images on high density screens,
+                          the advantage of lighter formats like .webp and .svg, Object Oriented CSS principles (separating content from container
+                          and separating structure and skin) and the BEM notation.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="v-timeline__segm">
+                    <div data-aos="fade-left" class="v-timeline__content font-color--primary">
+                      <div class="v-timeline__icon">
+                        <i class="fa-brands fa-git-alt"></i>
+                      </div>
+                      <h3 class="v-timeline__title">Version Control: Git</h3>
+                      <div class="v-timeline__description">
+                        <p>
+                          Despite having already used Git, I learnt the matter more deeply, especially the CLI commands .
+                        </p>
+                        <p>
+                          <span class="v-timeline__strong">Concepts learned:</span> Remote and Local repositories, SSH Keys,
+                          cloning/initializing repositories, the different stages (Adding to Staging area, Committing and Pushing), History (git log), Branches,
+                          Merge Requests, stashing WIP, deleting commits and reverting to previous Versions.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="v-timeline__segm">
+                    <div data-aos="fade--left-right" class="v-timeline__content font-color--primary" >
+                      <div class="v-timeline__icon">
+                        <i class="rotate-90-deg fa-solid fa-share-nodes"></i>
+                      </div>
+                      <h3 class="v-timeline__title">Data Structures</h3>
+                      <div class="v-timeline__description">
+                        <p>
+                          To better learn CS fundamentals I learned about the most common data structures as well as the time complexity
+                          of operations performed on them (insertion, deletion, search).
+                        </p>
+                        <p>
+                          <span class="v-timeline__strong">Concepts learned:</span> Big O Notation, Arrays, Linked Lists, Stacks, Queues
+                          , Hash Tables, Binary Trees, AVL Trees and Heaps.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="v-timeline__segm">
+                    <div data-aos="fade-left" class="v-timeline__content font-color--primary">
+                      <div class="v-timeline__icon">
+                        <svg width="4rem" height="4rem">
+                          <image xlink:href="images/csharp-icon-2.svg" width="4rem" height="4rem" src="images/dot-net-core.svg" />
+                        </svg>
+                      </div>
+                      <h3 class="v-timeline__title">C#</h3>
+                      <div class="v-timeline__description">
+                        <p>
+                          Due to both curiosity to learn a modern compiled language and a work necessity I learnt C# and part of the
+                          .NET framework.
+                        </p>
+                        <p>
+                          <span class="v-timeline__strong">Concepts learned:</span> Primitive Types, Control Flow (Conditionals, Loops),
+                          Data Structures, Classes (Polymorphism, Inheritance, Constructor Overloads, Encapsulation, Interfaces, Composition
+                          , Properties), Exceptions, Generics, Delegates, Events, Lambda Expressions/LINQ and Nullable Types.
+                        </p>
+                        <p>
+                          <span class="v-timeline__strong">Unit testing with NUnit Framework:</span> when to unit test, difference between unit tests, integration tests and
+                          end to end test, creating mocks and the value of interfaces to isolate classes.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="v-timeline__segm">
+                    <div data-aos="fade--left-right" class="v-timeline__content font-color--primary">
+                      <div class="v-timeline__icon">
+                        <i class="fab fa-python"></i>
+                      </div>
+                      <h3 class="v-timeline__title">Python</h3>
+                      <div class="v-timeline__description">
+                        <p>
+                          I started with Python since it's fairly easy to quick start, due to its fairly
+                          simple syntax.
+                        </p>
+                        <p>
+                          <span class="v-timeline__strong">Concepts learned:</span> Primitive Types, Control Flow (Conditionals, Loops),
+                          Data Structures, Classes (Polymorphism, Inheritance), Exceptions, modules and standard libraries like NumPy and
+                          Json Encoder/Decoder.
+                        </p>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <!-- CONTACT ME SECTION -->
+    <section class="block block--secondary" id="contactme">
+      <header class="block__header font-color--primary">
+        <div class="d-flex justify-content-center align-items-center">
+          <span class="block__heading-icons fas fa-comments"></span>
+          <h1 class="block__heading">Contact-me!</h1>
+        </div>
+      </header>
+      <div data-aos="fade-up" class="container-fluid block__description">
+        <div class="row">
+          <div data-aos="" class="col-lg-4 col-md-4 col-sm-6 col-12 mb-4">
+            <a class="links links--primary" href="https://www.linkedin.com/in/fjr09">
+              <span class="fab fa-linkedin block__description-icons"></span>
+            </a>           
+          </div>
+          <div data-aos="" class="col-lg-4 col-md-4 col-sm-6 col-12 mb-4">
+            <a class="links links--primary" href="mailto:fjrocha9@gmail.com">
+              <span class="fas fa-envelope block__description-icons"></span>
+            </a>
+          </div>
+          <div data-aos="" class="col-lg-4 col-md-4">
+            <a class="links links--primary" href="https://wa.me/351917559858">
+              <span class="fab fa-whatsapp block__description-icons"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="block block--secondary block--footer" id="footer">
+      <div class="block__description font-color--secondary">
+        <div class="d-flex justify-content-center align-items-center">
+          <p class="p__last">hosted on</p>
+          <img src="images/netlify-logo.svg" alt="Netlify Logo.">
+          <!-- <span class="fa-brands fa-github me-2"></span>
+          <picture>
+            <source
+              type="image/webp"
+              srcset="images/github-pages.webp"
+            />
+            <source
+              type="image/png"
+              srcset="images/github-pages.png"
+            />
+            <img class="host-image" src="images/github-pages.png" alt="" />
+          </picture> -->
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
