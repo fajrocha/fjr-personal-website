@@ -1,8 +1,4 @@
 $(document).ready(function() {
-  // $('.btn--arrow').click(function() {
-  //   $(this).find('i').toggleClass('far fa-arrow-alt-circle-right far fa-arrow-alt-circle-down');
-  // });
-
   $(".btn--arrow").click(function() {
     $(".btn__icon--rotate").toggleClass('rotate-90-deg');
     $(".btn--arrow").toggleClass('rotate-2-deg');

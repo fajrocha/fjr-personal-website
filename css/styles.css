@@ -720,12 +720,14 @@ h2 {
   overflow: hidden;
   position: relative;
   z-index: 1;
-  transition: transform 0.2s ease;
+  /* !important needed, since aos library was overriding the transform */
+  transition: transform 0.2s ease !important; 
 }
 
 .v-timeline__content:hover {
   text-decoration: none;
-  transform: scale(1.01);
+  /* !important needed, since aos library was overriding the transform */
+  transform: scale(1.01) !important;
 }
 
 .v-timeline__segm:nth-child(even) .v-timeline__content {

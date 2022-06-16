@@ -39,9 +39,9 @@
   right: 20px;
 }
 
-.main-timeline .timeline-content{
+.timeline-content{
   color: #fff;
-  background: linear-gradient(#D02578,#DA2677);
+  background: linear-gradient(#000,#000);
   min-height: 130px;
   padding: 0 0 20px;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
