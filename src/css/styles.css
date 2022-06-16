@@ -637,7 +637,7 @@ h2 {
   position: relative;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .v-timeline__segm {
     width: calc(50% + 9px);
     padding: 2rem 3rem 2rem 0;
@@ -679,7 +679,7 @@ h2 {
   left: -18px;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:992px) {
   .v-timeline__segm:before {
     right: -18px;
     left: auto;
@@ -694,7 +694,7 @@ h2 {
   left: 20px;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:992px) {
   .v-timeline__segm:after {
     left: auto;
     right: 20px;
